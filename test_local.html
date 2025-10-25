@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Local - Projetos IA UFFS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .btn-details {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-details:hover {
+            background: #1e40af;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
+        }
+        .project-status-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .status-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+        .status-label {
+            font-weight: bold;
+            color: #333;
+        }
+        .status-value {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Teste Local - Projetos IA UFFS</h1>
+        <p>Este é um teste para verificar se os modais funcionam quando o arquivo é aberto diretamente no navegador (protocolo file://).</p>
+        
+        <div class="project-card">
+            <h4>P1 - Regulamentação e diretrizes para uso de IA e RPA nas IFES</h4>
+            <p>Elaboração de normas e boas práticas para a implementação segura e ética de IA e RPA.</p>
+            <button class="btn-details" onclick="openProjectModal('P1')">Ver detalhes</button>
+        </div>
+        
+        <div class="project-card">
+            <h4>P2 - Definição de eixos estratégicos e áreas prioritárias</h4>
+            <p>Identificação e priorização de áreas para aplicação de RPA e IA com maior impacto e retorno.</p>
+            <button class="btn-details" onclick="openProjectModal('P2')">Ver detalhes</button>
+        </div>
+        
+        <div class="project-card">
+            <h4>P3 - Capacitação de servidores e docentes no uso de IA e RPA</h4>
+            <p>Programas de treinamento e workshops para desenvolver competências no uso e gestão de tecnologias de automação e IA.</p>
+            <button class="btn-details" onclick="openProjectModal('P3')">Ver detalhes</button>
+        </div>
+    </div>
+
+    <!-- Dados dos projetos -->
+    <script src="./js/projectsData.js"></script>
+
+    <!-- Modal para detalhes do projeto -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Conteúdo será inserido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            try {
+                console.log('Tentando carregar projeto:', projectId);
+                console.log('Dados disponíveis:', projectsData);
+                console.log('Procurando projeto com ID:', projectId.toLowerCase());
+                
+                const project = projectsData.projects.find(p => p.id === projectId.toLowerCase());
+                console.log('Projeto encontrado:', project);
+                
+                if (project) {
+                    const statusIcon = project.isActive ? '🟢' : '🔴';
+                    const statusText = project.isActive ? 'Ativo' : 'Inativo';
+                    
+                    const dependenciesText = project.dependencies.length > 0 
+                        ? project.dependencies.map(dep => dep.toUpperCase()).join(', ')
+                        : 'Nenhuma dependência';
+                    
+                    const dependentProjectsText = project.dependentProjects.length > 0
+                        ? project.dependentProjects.map(dep => dep.toUpperCase()).join(', ')
+                        : 'Nenhum projeto dependente';
+                    
+                    modalContent.innerHTML = `
+                        <h2>${project.title}</h2>
+                        
+                        <div class="project-status-info">
+                            <div class="status-row">
+                                <span class="status-label">📊 Status:</span>
+                                <span class="status-value">${statusIcon} ${statusText}</span>
+                            </div>
+                            <div class="status-row">
+                                <span class="status-label">🔄 Fase Atual:</span>
+                                <span class="status-value">${project.currentPhase}</span>
+                            </div>
+                            <div class="status-row">
+                                <span class="status-label">⬅️ Dependências:</span>
+                                <span class="status-value">${dependenciesText}</span>
+                            </div>
+                            <div class="status-row">
+                                <span class="status-label">➡️ Projetos Dependentes:</span>
+                                <span class="status-value">${dependentProjectsText}</span>
+                            </div>
+                        </div>
+                        
+                        <h3>📋 Descrição</h3>
+                        <p>${project.description}</p>
+                        
+                        <h3>🎯 Objetivo</h3>
+                        <p>${project.details.objective}</p>
+                        
+                        <h3>📦 Pacotes de Trabalho</h3>
+                        <ul>
+                            ${project.details.workPackages.map(wp => `<li>${wp}</li>`).join('')}
+                        </ul>
+                        
+                        <h3>⏱️ Fases do Projeto</h3>
+                        <ul>
+                            ${project.details.sprints.map(sprint => `
+                                <li><strong>${sprint.name}:</strong> ${sprint.description}</li>
+                            `).join('')}
+                        </ul>
+                    `;
+                } else {
+                    modalContent.innerHTML = `
+                        <h2>Projeto não encontrado</h2>
+                        <p>Não foi possível carregar as informações do projeto ${projectId}.</p>
+                    `;
+                }
+            } catch (error) {
+                console.error('Erro ao carregar dados do projeto:', error);
+                modalContent.innerHTML = `
+                    <h2>Erro ao carregar projeto</h2>
+                    <p>Ocorreu um erro ao carregar as informações do projeto.</p>
+                    <p><strong>Erro:</strong> ${error.message}</p>
+                    <p><strong>Projeto ID:</strong> ${projectId}</p>
+                `;
+            }
+            
+            modal.style.display = 'block';
+        }
+        
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            modal.style.display = 'none';
+        }
+        
+        // Fechar modal clicando fora dele
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

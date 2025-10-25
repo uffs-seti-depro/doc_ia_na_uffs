@@ -19,9 +19,6 @@ html
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 
@@ -166,9 +163,180 @@ Desenvolvido sob licença de software livre, este projeto está aberto à cooper
             <div class="container">
                 <h2 class="text-center">Projetos Específicos do Portfólio</h2>
                 
-                <!-- Container para carregamento dinâmico dos projetos -->
-                <div class="projects-grid" id="projects-container">
-                    <!-- Os projetos serão carregados dinamicamente aqui pelo projects.js -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-cluster">
+                        <h3>Cluster 1 - Institucionalização</h3>
+                        <div class="project-cards-grid">
+                            <div class="project-card">
+                                <div class="project-status-indicator status-planning">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Planejado</span>
+                                </div>
+                                <h4 data-project-number="P1">Regulamentação e diretrizes para uso de IA e RPA nas IFES</h4>
+                                <p>Elaboração de normas e boas práticas para a implementação segura e ética de IA e RPA.</p>
+                                <div class="project-actions">
+                                    <button class="btn-details" onclick="openProjectModal('P1')">Ver detalhes</button>
+                                    <span class="project-manager">Gerente: Silvia</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-status-indicator status-active">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Ativo</span>
+                                </div>
+                                <h4 data-project-number="P2">Definição de eixos estratégicos e áreas prioritárias</h4>
+                                <p>Identificação e priorização de áreas para aplicação de RPA e IA com maior impacto e retorno.</p>
+                                <div class="project-manager">Gerente: Ocimar</div>
+                                <div class="project-actions">
+                                    <button class="btn-details" onclick="openProjectModal('P2')">Ver detalhes</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-status-indicator status-planning">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Planejamento</span>
+                                </div>
+                                <h4 data-project-number="P3">Capacitação de servidores e docentes no uso de IA e RPA</h4>
+                                <p>Programas de treinamento e workshops para desenvolver competências no uso e gestão de tecnologias de automação e IA.</p>
+                                <div class="project-actions">
+                                    <button class="btn-details" onclick="openProjectModal('P3')">Ver detalhes</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-status-indicator status-planning">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Planejamento</span>
+                                </div>
+                                <h4 data-project-number="P4">Taxonomia e organização do conhecimento</h4>
+                                <p>Criação de sistemas de classificação e ontologias para estruturar o conhecimento institucional e facilitar o uso de IA.</p>
+                                <div class="project-actions">
+                                    <button class="btn-details" onclick="openProjectModal('P4')">Ver detalhes</button>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P5">Criação do comitê de governança da IA</h4>
+                                <p>Estabelecimento de um comitê multidisciplinar para supervisionar, orientar e garantir o uso ético e responsável da IA nas IFES.</p>
+                                <button class="btn-details" onclick="openProjectModal('P5')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P6">Captação de recursos e viabilização do uso</h4>
+                                <p>Desenvolvimento de estratégias para captação de recursos financeiros e humanos necessários para implementação e sustentação das soluções de IA e RPA.</p>
+                                <button class="btn-details" onclick="openProjectModal('P6')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P7">Fomento de parcerias e comunidade colaborativa</h4>
+                                <p>Criação de redes de colaboração entre IFES, empresas e organizações para sustentação e evolução contínua das soluções tecnológicas.</p>
+                                <button class="btn-details" onclick="openProjectModal('P7')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P8">Dimensionamento e planejamento de recursos tecnológicos</h4>
+                                <p>Análise e planejamento da infraestrutura tecnológica necessária para suportar as soluções de IA e RPA, incluindo hardware, software e capacidade de processamento.</p>
+                                <button class="btn-details" onclick="openProjectModal('P8')">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-cluster">
+                        <h3>Cluster 2 - Ferramentas e Soluções</h3>
+                        <div class="project-cards-grid">
+                            <div class="project-card">
+                                <h4 data-project-number="P9">Instalação e implantação da Infraestrutura de TI</h4>
+                                <p>Instalação e implantação da infraestrutura de TI para as diversas fases do projeto conforme definido no projeto P2.</p>
+                                <button class="btn-details" onclick="openProjectModal('P9')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P10">Pipeline de dados para treinamento dos modelos de IA</h4>
+                                <p>Desenvolvimento de pipeline de dados para coleta, processamento e preparação de dados para treinamento de modelos de IA.</p>
+                                <button class="btn-details" onclick="openProjectModal('P10')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P11">Digitalização e gestão documental</h4>
+                                <p>Iniciativas para digitalizar acervos, otimizar a gestão de documentos e integrá-los a sistemas de automação.</p>
+                                <button class="btn-details" onclick="openProjectModal('P11')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P12">Webchat para interação com assistentes virtuais</h4>
+                                <p>Desenvolvimento de interface web para interação dos usuários com os diversos assistentes virtuais da instituição.</p>
+                                <button class="btn-details" onclick="openProjectModal('P12')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P13">Assistente virtual para regras de negócio e regulamentos</h4>
+                                <p>Assistente virtual para atender usuários sobre regras de negócio, regulamentos e demais documentações estáticas.</p>
+                                <button class="btn-details" onclick="openProjectModal('P13')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P14">Assistente virtual departamentalizado</h4>
+                                <p>Assistente virtual para atender usuários sobre informações de unidades específicas com produção generativa a partir das bases de dados institucionais.</p>
+                                <button class="btn-details" onclick="openProjectModal('P14')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P15">Assistente virtual para produção generativa de documentos</h4>
+                                <p>Assistente virtual especializado na produção generativa de documentos e processos institucionais.</p>
+                                <button class="btn-details" onclick="openProjectModal('P15')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P16">Agentes computacionais</h4>
+                                <p>Desenvolvimento de agentes computacionais autônomos para execução de tarefas complexas e tomada de decisões automatizadas.</p>
+                                <button class="btn-details" onclick="openProjectModal('P16')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P17">Plataforma de Dados Institucionais (API.Dados)</h4>
+                                <p>Desenvolvimento de plataforma centralizada para acesso e integração de dados institucionais através de APIs padronizadas.</p>
+                                <button class="btn-details" onclick="openProjectModal('P17')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P18">Ferramenta de Business Analytics</h4>
+                                <p>Desenvolvimento de ferramenta de Business Analytics para fornecer insights e análises de dados aos usuários.</p>
+                                <button class="btn-details" onclick="openProjectModal('P18')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P19">Protokols.bot</h4>
+                                <p>Ferramenta de automatização de processos, geração de documentos e operações no sistema de protocolo.</p>
+                                <button class="btn-details" onclick="openProjectModal('P19')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P20">Integrador Compras-Contratos-Financeiro</h4>
+                                <p>Automatização dos fluxos de planejamento de compras, requisições, licitações, empenhos, liquidação e gestão de contratos, integrando SIPAC e sistemas de governo.</p>
+                                <button class="btn-details" onclick="openProjectModal('P20')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P21">Administrativo.bot</h4>
+                                <p>Automatização de processos complexos e/ou incompletos nos sistemas SIGAdmin, SIPAC e SIGRH.</p>
+                                <button class="btn-details" onclick="openProjectModal('P21')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P22">Acadêmico.bot</h4>
+                                <p>Automatização de processos complexos e/ou incompletos no sistema SIGAA e seus orbitais.</p>
+                                <button class="btn-details" onclick="openProjectModal('P22')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P23">Automatização do AFD</h4>
+                                <p>Automatização do Assentamento Digital Funcional a partir dos documentos produzidos pelos diversos sistemas internos e de governo.</p>
+                                <button class="btn-details" onclick="openProjectModal('P23')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P24">Automatização do SIAPE/SIGEPE</h4>
+                                <p>Automatização de processos e integrações com os sistemas SIAPE e SIGEPE para gestão de recursos humanos.</p>
+                                <button class="btn-details" onclick="openProjectModal('P24')">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-cluster">
+                        <h3>Cluster 3 - Pesquisa e Inovação</h3>
+                        <div class="project-cards-grid">
+                            <div class="project-card">
+                                <h4 data-project-number="P25">Projetos piloto e experimentação</h4>
+                                <p>Implementação de projetos em pequena escala para testar a viabilidade e eficácia de novas soluções de IA e RPA.</p>
+                                <button class="btn-details" onclick="openProjectModal('P25')">Ver detalhes</button>
+                            </div>
+                            <div class="project-card">
+                                <h4 data-project-number="P26">Divulgação científica e eventos</h4>
+                                <p>Organização de eventos, seminários e publicações para disseminar os resultados das pesquisas e avanços tecnológicos.</p>
+                                <button class="btn-details" onclick="openProjectModal('P26')">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -551,8 +719,6 @@ Desenvolvido sob licença de software livre, este projeto está aberto à cooper
 
     <!-- Dados dos projetos -->
     <script src="./js/projectsData.js"></script>
-    <script src="./js/projects.js"></script>
-    <script src="./js/modal.js"></script>
 
     <!-- Modal para detalhes do projeto -->
     <div id="projectModal" class="modal">

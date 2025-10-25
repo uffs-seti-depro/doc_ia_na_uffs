@@ -1,0 +1,356 @@
+{
+  "projects": [
+    {
+      "id": "P1",
+      "title": "P1 - Fundamentação e Planejamento",
+      "description": "Estabelecimento das bases teóricas e metodológicas para implementação de IA na UFFS.",
+      "isActive": true,
+      "currentPhase": "Fase 1 - Levantamento de requisitos",
+      "dependencies": [],
+      "dependentProjects": ["P2", "P3"],
+      "status": "active",
+      "projectManager": "A definir",
+      "teamProfile": "Equipe multidisciplinar com competências em: análise jurídica e regulatória para diagnóstico da situação na UFFS e estudo dos marcos legais; especialistas em tecnologia e IA para levantamento de requisitos técnicos; redatores técnicos para elaboração de diretrizes; especialistas em consulta pública e comunicação institucional; gestores de projeto para coordenação das fases.",
+      "projectTeam": [
+        "Coordenador de Projeto",
+        "Especialista Jurídico",
+        "Especialista em IA",
+        "Redator Técnico",
+        "Especialista em Comunicação"
+      ],
+      "priority": "high",
+      "icon": "P1",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Estabelecer as bases teóricas e metodológicas para a implementação de IA na UFFS.",
+        "workPackages": [
+          "Levantamento de requisitos legais e institucionais",
+          "Elaboração das diretrizes e normas",
+          "Consulta pública e revisões",
+          "Aprovação e publicação oficial"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Levantamento",
+            "description": "Levantamento de requisitos legais e institucionais"
+          },
+          {
+            "name": "Fase 2 - Elaboração",
+            "description": "Elaboração das diretrizes e normas"
+          },
+          {
+            "name": "Fase 3 - Consulta",
+            "description": "Consulta pública e revisões"
+          },
+          {
+            "name": "Fase 4 - Aprovação",
+            "description": "Aprovação e publicação oficial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "title": "P2 - Desenvolvimento de competências e capacitação",
+      "description": "Programa abrangente de capacitação em IA e RPA para servidores e estudantes da UFFS.",
+      "isActive": true,
+      "currentPhase": "Fase 2 - Desenvolvimento de conteúdo",
+      "dependencies": ["P1"],
+      "dependentProjects": ["P3", "P4"],
+      "status": "in_progress",
+      "projectManager": "A definir",
+      "teamProfile": "Equipe especializada em educação e tecnologia com competências em: design instrucional para desenvolvimento de cursos e materiais didáticos; especialistas em IA e RPA para conteúdo técnico; pedagogos para metodologias de ensino; desenvolvedores de plataformas educacionais; coordenadores de treinamento para execução dos programas.",
+      "projectTeam": [
+        "Designer Instrucional",
+        "Especialista em IA/RPA",
+        "Pedagogo",
+        "Desenvolvedor de Plataforma",
+        "Coordenador de Treinamento"
+      ],
+      "priority": "high",
+      "icon": "P2",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Desenvolver competências em IA e RPA para servidores e estudantes da UFFS.",
+        "workPackages": [
+          "Análise de necessidades de capacitação",
+          "Desenvolvimento de currículo e materiais",
+          "Implementação de plataforma de ensino",
+          "Execução dos treinamentos"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Análise",
+            "description": "Análise de necessidades de capacitação"
+          },
+          {
+            "name": "Fase 2 - Desenvolvimento",
+            "description": "Desenvolvimento de currículo e materiais"
+          },
+          {
+            "name": "Fase 3 - Implementação",
+            "description": "Implementação de plataforma de ensino"
+          },
+          {
+            "name": "Fase 4 - Execução",
+            "description": "Execução dos treinamentos"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P3",
+      "title": "P3 - Desenvolvimento de soluções de IA para gestão acadêmica",
+      "description": "Criação de ferramentas de IA para otimizar processos de gestão acadêmica na UFFS.",
+      "isActive": true,
+      "currentPhase": "Fase 1 - Análise de requisitos",
+      "dependencies": ["P1", "P2"],
+      "dependentProjects": ["P4"],
+      "status": "planning",
+      "projectManager": "A definir",
+      "teamProfile": "Equipe técnica especializada com competências em: desenvolvimento de software e sistemas; especialistas em IA e machine learning; analistas de sistemas para levantamento de requisitos; especialistas em gestão acadêmica; testadores e especialistas em qualidade de software.",
+      "projectTeam": [
+        "Desenvolvedor de Software",
+        "Especialista em IA/ML",
+        "Analista de Sistemas",
+        "Especialista em Gestão Acadêmica",
+        "Testador/QA"
+      ],
+      "priority": "medium",
+      "icon": "P3",
+      "cluster": "Cluster 2 - Desenvolvimento",
+      "details": {
+        "objective": "Desenvolver soluções de IA para otimizar a gestão acadêmica.",
+        "workPackages": [
+          "Análise de processos acadêmicos",
+          "Desenvolvimento de algoritmos de IA",
+          "Integração com sistemas existentes",
+          "Testes e validação"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Análise",
+            "description": "Análise de processos acadêmicos"
+          },
+          {
+            "name": "Fase 2 - Desenvolvimento",
+            "description": "Desenvolvimento de algoritmos de IA"
+          },
+          {
+            "name": "Fase 3 - Integração",
+            "description": "Integração com sistemas existentes"
+          },
+          {
+            "name": "Fase 4 - Testes",
+            "description": "Testes e validação"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P4",
+      "title": "P4 - Automação de processos administrativos com RPA",
+      "description": "Implementação de soluções RPA para automatizar processos administrativos repetitivos.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P2", "P3"],
+      "dependentProjects": [],
+      "status": "planning",
+      "projectManager": "A definir",
+      "teamProfile": "Equipe técnica com competências em: desenvolvimento e implementação de RPA; analistas de processos para mapeamento e otimização; especialistas em integração de sistemas; gestores de mudança para acompanhamento da transição; especialistas em segurança da informação.",
+      "projectTeam": [
+        "Desenvolvedor RPA",
+        "Analista de Processos",
+        "Especialista em Integração",
+        "Gestor de Mudança",
+        "Especialista em Segurança"
+      ],
+      "priority": "medium",
+      "icon": "P4",
+      "cluster": "Cluster 2 - Desenvolvimento",
+      "details": {
+        "objective": "Automatizar processos administrativos repetitivos usando RPA.",
+        "workPackages": [
+          "Mapeamento de processos",
+          "Desenvolvimento de bots RPA",
+          "Testes e validação",
+          "Implementação e monitoramento"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Mapeamento",
+            "description": "Mapeamento de processos"
+          },
+          {
+            "name": "Fase 2 - Desenvolvimento",
+            "description": "Desenvolvimento de bots RPA"
+          },
+          {
+            "name": "Fase 3 - Testes",
+            "description": "Testes e validação"
+          },
+          {
+            "name": "Fase 4 - Implementação",
+            "description": "Implementação e monitoramento"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P8",
+      "title": "P8 - Dimensionamento e planejamento de recursos tecnológicos",
+      "description": "Análise e planejamento da infraestrutura tecnológica necessária para implementação de soluções de IA e RPA.",
+      "isActive": true,
+      "currentPhase": "Fase 1 - Análise da infraestrutura atual",
+      "dependencies": ["P1", "P2"],
+      "dependentProjects": ["P9", "P10"],
+      "status": "in_progress",
+      "projectManager": "A definir",
+      "teamProfile": "Equipe com competências em: arquitetura de sistemas e infraestrutura tecnológica; especialistas em IA e computação de alto desempenho; analistas de capacidade e performance; especialistas em segurança da informação; gestores de TI e planejamento tecnológico.",
+      "projectTeam": [
+        "Arquiteto de Sistemas",
+        "Especialista em IA/HPC",
+        "Analista de Capacidade",
+        "Especialista em Segurança",
+        "Gestor de TI"
+      ],
+      "priority": "high",
+      "icon": "P8",
+      "cluster": "Cluster 3 - Infraestrutura",
+      "details": {
+        "objective": "Dimensionar e planejar os recursos tecnológicos necessários para suportar as soluções de IA e RPA.",
+        "workPackages": [
+          "Análise da infraestrutura atual",
+          "Especificação de requisitos técnicos",
+          "Planejamento de capacidade",
+          "Elaboração de roadmap tecnológico"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Diagnóstico",
+            "description": "Análise da infraestrutura atual"
+          },
+          {
+            "name": "Fase 2 - Especificação",
+            "description": "Definição de requisitos e arquitetura"
+          },
+          {
+            "name": "Fase 3 - Planejamento",
+            "description": "Elaboração do roadmap de implementação"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P7",
+      "title": "P7 - Fomento de parcerias e comunidade colaborativa",
+      "description": "Projeto de captação de recursos para assegurar a sustentabilidade financeira e o crescimento do Laboratório de Inovação com IA na UFFS.",
+      "isActive": true,
+      "currentPhase": "C.1 Sprint 1 - Pesquisa e Seleção de Editais",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "active",
+      "projectManager": "Ricardo Garmus",
+      "teamProfile": "Equipe especializada em captação de recursos com competências em: gestão de projetos de captação; especialistas em elaboração de propostas para agências de fomento; analistas financeiros para estruturação orçamentária; coordenadores de parcerias para relacionamento institucional; especialistas em negociação e contratos.",
+      "projectTeam": [
+        "Gestor de Projetos",
+        "Especialista em Captação",
+        "Analista Financeiro",
+        "Coordenadores de Parcerias (5)"
+      ],
+      "priority": "high",
+      "icon": "P7",
+      "cluster": "Cluster 4 - Sustentabilidade",
+      "duration": "24 meses (contínuo)",
+      "budget": "R$ 2.500.000,00",
+      "captationGoal": "R$ 3.000.000,00",
+      "teamSize": 8,
+      "details": {
+        "objective": "Assegurar a sustentabilidade financeira e o crescimento do Laboratório de Inovação com IA na UFFS através da captação de recursos junto a agências de fomento, estabelecimento de parcerias financeiras estratégicas, desenvolvimento de modelo de sustentabilidade financeira e criação de pipeline de financiamento contínuo e diversificado.",
+        "specificObjectives": [
+          "Captar Recursos junto a Agências de Fomento: Obter financiamento de instituições nacionais como CNPq, CAPES, FINEP e BNDES para projetos de pesquisa, desenvolvimento e infraestrutura.",
+          "Estabelecer Parcerias Financeiras Estratégicas: Firmar convênios e acordos financeiros com instituições públicas, empresas privadas e fundações.",
+          "Desenvolver Modelo de Sustentabilidade Financeira: Criar e implementar um plano de longo prazo para a autossuficiência financeira do laboratório, explorando diversas fontes de receita.",
+          "Criar Pipeline de Financiamento Contínuo e Diversificado: Manter um fluxo constante de oportunidades de captação, diversificando as fontes para reduzir a dependência de um único tipo de financiamento."
+        ],
+        "workPackages": [
+          "C.1: Propostas CNPq/CAPES - 6 meses - Meta: R$ 800.000,00",
+          "C.2: Editais FINEP/BNDES - 8 meses - Meta: R$ 1.200.000,00",
+          "C.3: Parcerias RNP (Rede Nacional de Ensino e Pesquisa) - 4 meses - Meta: R$ 300.000,00",
+          "C.4: Fundações Estaduais de Amparo à Pesquisa (FAPs) - 6 meses - Meta: R$ 400.000,00",
+          "C.5: Parcerias Privadas e Iniciativa Privada - 12 meses - Meta: R$ 300.000,00"
+        ],
+        "performanceIndicators": [
+          {
+            "name": "Valor Total Captado",
+            "metric": "Somatório de todos os recursos financeiros obtidos e formalizados",
+            "goal": "R$ 3.000.000,00",
+            "type": "financial"
+          },
+          {
+            "name": "Número de Propostas Submetidas",
+            "metric": "Quantidade de propostas de projetos enviadas às agências de fomento e empresas",
+            "goal": "30 propostas (mínimo)",
+            "type": "quantity"
+          },
+          {
+            "name": "Taxa de Sucesso na Captação",
+            "metric": "(Número de propostas aprovadas / Número de propostas submetidas) * 100%",
+            "goal": "Acima de 25%",
+            "type": "percentage"
+          },
+          {
+            "name": "Diversificação das Fontes de Financiamento",
+            "metric": "Percentual de cada fonte de financiamento (agências, empresas, fundações) no total captado",
+            "goal": "Nenhuma fonte exceder 50% do total captado (exceto FINEP/BNDES devido ao maior valor individual)",
+            "type": "distribution"
+          },
+          {
+            "name": "Número de Parcerias Formalizadas",
+            "metric": "Quantidade de convênios, acordos de cooperação ou contratos assinados",
+            "goal": "10 parcerias (mínimo)",
+            "type": "quantity"
+          },
+          {
+            "name": "Ciclo Médio de Captação",
+            "metric": "Tempo médio desde a submissão da proposta até a formalização do repasse",
+            "goal": "Reduzir em 15% em comparação com o histórico",
+            "type": "time"
+          },
+          {
+            "name": "Sustentabilidade Financeira (Longo Prazo)",
+            "metric": "Percentual de recursos garantidos para os próximos 12 meses após o término do projeto de captação",
+            "goal": "30% do orçamento anual do laboratório garantido por fontes contínuas",
+            "type": "percentage"
+          },
+          {
+            "name": "Produtividade da Equipe de Captação",
+            "metric": "Valor captado por membro da equipe por mês",
+            "goal": "R$ 15.625,00/mês/membro (baseado na meta de R$3M em 24 meses por 8 membros)",
+            "type": "productivity"
+          }
+        ],
+        "sprints": [
+          {
+            "name": "C.1 Sprint 1 - Pesquisa e Seleção de Editais",
+            "description": "Identificação contínua de editais abertos e futuros. Análise de elegibilidade e aderência aos objetivos do laboratório. Priorização dos editais mais promissores. Formação de equipes multidisciplinares para cada edital selecionado.",
+            "duration": "Mês 1",
+            "workPackage": "C.1: Propostas CNPq/CAPES"
+          },
+          {
+            "name": "C.1 Sprint 2 - Elaboração de Pré-Projetos e Documentação",
+            "description": "Desenvolvimento de esboços de propostas (sumário executivo, objetivos, metodologia). Levantamento de requisitos documentais e burocráticos. Coleta de currículos e informações dos pesquisadores envolvidos. Validação interna dos pré-projetos com a gestão do laboratório.",
+            "duration": "Mês 2-3",
+            "workPackage": "C.1: Propostas CNPq/CAPES"
+          },
+          {
+            "name": "C.1 Sprint 3 - Desenvolvimento e Submissão Final",
+            "description": "Escrita detalhada das propostas técnicas e financeiras. Revisão e ajustes de linguagem e conformidade. Obtenção de pareceres internos e externos (se aplicável). Submissão formal das propostas nas plataformas das agências. Acompanhamento pós-submissão e resposta a diligências.",
+            "duration": "Mês 4-6",
+            "workPackage": "C.1: Propostas CNPq/CAPES"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,744 @@
+{
+  "projects": [
+    {
+      "id": "P1",
+      "title": "Regulamentação e diretrizes para uso de IA e RPA nas IFES",
+      "description": "Elaboração de normas e boas práticas para a implementação segura e ética de IA e RPA.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": ["P2", "P3"],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-gavel",
+      "manager": "Silvia",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Elaborar normas e boas práticas para a implementação segura e ética de IA e RPA nas Instituições Federais de Ensino Superior.",
+        "teamProfile": "Equipe multidisciplinar com competências em: análise jurídica e regulatória para diagnóstico da situação na UFFS e estudo dos marcos legais; especialistas em tecnologia e IA para levantamento de requisitos técnicos; redatores técnicos para elaboração de diretrizes; especialistas em consulta pública e comunicação institucional; gestores de projeto para coordenação das fases.",
+        "projectTeam": [
+          "Silvia Bertagnolli (Coordenadora)",
+          "Especialista Jurídico",
+          "Especialista em IA",
+          "Redator Técnico",
+          "Especialista em Comunicação"
+        ],
+        "workPackages": [
+          "Levantamento de requisitos legais e institucionais",
+          "Elaboração das diretrizes e normas",
+          "Consulta pública e revisões",
+          "Aprovação e publicação oficial"
+        ],
+        "sprints": [
+          {
+            "name": "Fase 1 - Levantamento",
+            "description": "Levantamento de requisitos legais e institucionais"
+          },
+          {
+            "name": "Fase 2 - Elaboração",
+            "description": "Elaboração das diretrizes e normas"
+          },
+          {
+            "name": "Fase 3 - Consulta",
+            "description": "Consulta pública e revisões"
+          },
+          {
+            "name": "Fase 4 - Aprovação",
+            "description": "Aprovação e publicação oficial"
+          }
+        ],
+        "successIndicators": [
+          "Documento de diretrizes aprovado",
+          "Conformidade legal verificada",
+          "Aceitação da comunidade acadêmica"
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "title": "Definição de eixos estratégicos e áreas prioritárias",
+      "description": "Identificação e priorização de áreas para aplicação de RPA e IA com maior impacto e retorno.",
+      "isActive": true,
+      "currentPhase": "Execução",
+      "dependencies": ["P1"],
+      "dependentProjects": ["P3", "P4"],
+      "status": "active",
+      "priority": "high",
+      "icon": "fas fa-bullseye",
+      "manager": "Ocimar",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Identificar e priorizar áreas estratégicas para aplicação de RPA e IA com maior impacto e retorno para a UFFS.",
+        "teamProfile": "Equipe estratégica com competências em: análise de processos institucionais; gestão estratégica e planejamento; análise de dados e métricas; especialistas em IA e RPA; representantes das diferentes áreas da universidade.",
+        "projectTeam": [
+          "Ocimar Munhoz Alavarse (Coordenador)",
+          "Analista de Processos",
+          "Especialista em Planejamento Estratégico",
+          "Analista de Dados",
+          "Representantes das Pró-reitorias"
+        ],
+        "workPackages": [
+          "Mapeamento de processos institucionais",
+          "Análise de impacto e viabilidade",
+          "Priorização de áreas estratégicas",
+          "Definição de roadmap de implementação"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Mapeamento",
+            "description": "Mapeamento completo dos processos institucionais"
+          },
+          {
+            "name": "Sprint 2 - Análise",
+            "description": "Análise de impacto e viabilidade técnica"
+          },
+          {
+            "name": "Sprint 3 - Priorização",
+            "description": "Priorização baseada em critérios estratégicos"
+          },
+          {
+            "name": "Sprint 4 - Roadmap",
+            "description": "Definição do roadmap de implementação"
+          }
+        ],
+        "successIndicators": [
+          "Mapa de processos completo",
+          "Matriz de priorização aprovada",
+          "Roadmap estratégico definido"
+        ]
+      }
+    },
+    {
+      "id": "P3",
+      "title": "Capacitação de servidores e docentes no uso de IA e RPA",
+      "description": "Programas de treinamento e workshops para desenvolver competências no uso e gestão de tecnologias de automação e IA.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P1", "P2"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-graduation-cap",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Desenvolver competências em servidores e docentes para uso efetivo e gestão de tecnologias de automação e IA.",
+        "teamProfile": "Equipe pedagógica especializada em: design instrucional e metodologias de ensino; especialistas em IA e RPA para conteúdo técnico; coordenadores de capacitação; especialistas em educação a distância; avaliadores de aprendizagem.",
+        "projectTeam": [
+          "Coordenador de Capacitação",
+          "Designer Instrucional",
+          "Especialista em IA",
+          "Especialista em RPA",
+          "Coordenador EaD"
+        ],
+        "workPackages": [
+          "Desenvolvimento de conteúdo pedagógico",
+          "Criação de ambiente de aprendizagem",
+          "Execução dos treinamentos",
+          "Avaliação e certificação"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Conteúdo",
+            "description": "Desenvolvimento de material didático e conteúdo"
+          },
+          {
+            "name": "Sprint 2 - Ambiente",
+            "description": "Preparação do ambiente de aprendizagem"
+          },
+          {
+            "name": "Sprint 3 - Treinamentos",
+            "description": "Execução dos programas de capacitação"
+          },
+          {
+            "name": "Sprint 4 - Avaliação",
+            "description": "Avaliação de resultados e certificação"
+          }
+        ],
+        "successIndicators": [
+          "Número de servidores capacitados",
+          "Taxa de aprovação nos cursos",
+          "Aplicação prática dos conhecimentos"
+        ]
+      }
+    },
+    {
+      "id": "P4",
+      "title": "Taxonomia e organização do conhecimento",
+      "description": "Criação de sistemas de classificação e ontologias para estruturar o conhecimento institucional e facilitar o uso de IA.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P2"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-sitemap",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Criar sistemas de classificação e ontologias para estruturar o conhecimento institucional e facilitar o uso de IA.",
+        "teamProfile": "Equipe especializada em: ciência da informação e biblioteconomia; especialistas em ontologias e taxonomias; analistas de sistemas de informação; especialistas em IA e processamento de linguagem natural; gestores de conteúdo.",
+        "projectTeam": [
+          "Especialista em Ciência da Informação",
+          "Ontologista",
+          "Analista de Sistemas",
+          "Especialista em NLP",
+          "Gestor de Conteúdo"
+        ],
+        "workPackages": [
+          "Análise do conhecimento institucional",
+          "Desenvolvimento de taxonomias",
+          "Criação de ontologias",
+          "Implementação de sistema de classificação"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Análise",
+            "description": "Análise e mapeamento do conhecimento institucional"
+          },
+          {
+            "name": "Sprint 2 - Taxonomias",
+            "description": "Desenvolvimento de estruturas taxonômicas"
+          },
+          {
+            "name": "Sprint 3 - Ontologias",
+            "description": "Criação de ontologias formais"
+          },
+          {
+            "name": "Sprint 4 - Implementação",
+            "description": "Implementação do sistema de classificação"
+          }
+        ],
+        "successIndicators": [
+          "Taxonomia institucional aprovada",
+          "Ontologias implementadas",
+          "Sistema de classificação funcional"
+        ]
+      }
+    },
+    {
+      "id": "P5",
+      "title": "Ferramentas de IA para áreas de humanas",
+      "description": "Desenvolvimento de ferramentas específicas de IA para apoiar pesquisa e ensino nas áreas de ciências humanas e sociais.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-users-cog",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Desenvolver ferramentas específicas de IA para apoiar pesquisa e ensino nas áreas de ciências humanas e sociais.",
+        "teamProfile": "Equipe interdisciplinar com: pesquisadores das áreas de humanas; desenvolvedores especializados em IA; especialistas em processamento de linguagem natural; designers de interface; especialistas em metodologia de pesquisa.",
+        "projectTeam": [
+          "Pesquisador em Ciências Humanas",
+          "Desenvolvedor IA",
+          "Especialista em NLP",
+          "Designer UX/UI",
+          "Metodologista"
+        ],
+        "workPackages": [
+          "Levantamento de necessidades das áreas",
+          "Desenvolvimento de protótipos",
+          "Testes com usuários finais",
+          "Implementação e treinamento"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Levantamento",
+            "description": "Identificação de necessidades específicas das áreas"
+          },
+          {
+            "name": "Sprint 2 - Protótipos",
+            "description": "Desenvolvimento de protótipos funcionais"
+          },
+          {
+            "name": "Sprint 3 - Testes",
+            "description": "Testes de usabilidade com pesquisadores"
+          },
+          {
+            "name": "Sprint 4 - Implementação",
+            "description": "Implementação final e treinamento"
+          }
+        ],
+        "successIndicators": [
+          "Ferramentas desenvolvidas e testadas",
+          "Adoção pelos pesquisadores",
+          "Melhoria na produtividade de pesquisa"
+        ]
+      }
+    },
+    {
+      "id": "P6",
+      "title": "Plataforma de treinamento e simulação",
+      "description": "Desenvolvimento de plataformas para treinamento e simulação usando IA, permitindo aprendizado prático e seguro.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-dollar-sign",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Desenvolver plataformas para treinamento e simulação usando IA, permitindo aprendizado prático e seguro.",
+        "teamProfile": "Equipe técnica especializada em: desenvolvimento de simuladores; especialistas em IA e machine learning; designers de experiência educacional; especialistas em gamificação; desenvolvedores de realidade virtual/aumentada.",
+        "projectTeam": [
+          "Desenvolvedor de Simuladores",
+          "Especialista em IA",
+          "Designer Educacional",
+          "Especialista em Gamificação",
+          "Desenvolvedor VR/AR"
+        ],
+        "workPackages": [
+          "Análise de requisitos de treinamento",
+          "Desenvolvimento da plataforma",
+          "Criação de cenários de simulação",
+          "Testes e validação pedagógica"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Requisitos",
+            "description": "Levantamento de necessidades de treinamento"
+          },
+          {
+            "name": "Sprint 2 - Plataforma",
+            "description": "Desenvolvimento da infraestrutura base"
+          },
+          {
+            "name": "Sprint 3 - Cenários",
+            "description": "Criação de simulações específicas"
+          },
+          {
+            "name": "Sprint 4 - Validação",
+            "description": "Testes pedagógicos e ajustes"
+          }
+        ],
+        "successIndicators": [
+          "Plataforma funcional desenvolvida",
+          "Cenários de simulação validados",
+          "Eficácia pedagógica comprovada"
+        ]
+      }
+    },
+    {
+      "id": "P7",
+      "title": "Digitalização e gestão documental",
+      "description": "Iniciativas para digitalizar acervos, otimizar a gestão de documentos e integrá-los a sistemas de automação.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-handshake",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Digitalizar acervos, otimizar a gestão de documentos e integrá-los a sistemas de automação.",
+        "teamProfile": "Equipe especializada em: gestão documental e arquivística; especialistas em digitalização; desenvolvedores de sistemas de gestão; especialistas em OCR e processamento de documentos; analistas de metadados.",
+        "projectTeam": [
+          "Arquivista",
+          "Especialista em Digitalização",
+          "Desenvolvedor de Sistemas",
+          "Especialista em OCR",
+          "Analista de Metadados"
+        ],
+        "workPackages": [
+          "Inventário e classificação de acervos",
+          "Processo de digitalização",
+          "Desenvolvimento de sistema de gestão",
+          "Integração com sistemas existentes"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Inventário",
+            "description": "Catalogação e classificação dos acervos"
+          },
+          {
+            "name": "Sprint 2 - Digitalização",
+            "description": "Processo de digitalização dos documentos"
+          },
+          {
+            "name": "Sprint 3 - Sistema",
+            "description": "Desenvolvimento do sistema de gestão"
+          },
+          {
+            "name": "Sprint 4 - Integração",
+            "description": "Integração com sistemas institucionais"
+          }
+        ],
+        "successIndicators": [
+          "Percentual de acervo digitalizado",
+          "Sistema de gestão implementado",
+          "Redução no tempo de busca de documentos"
+        ]
+      }
+    },
+    {
+      "id": "P8",
+      "title": "Automação de processos jurídicos",
+      "description": "Desenvolvimento de soluções para automatizar processos jurídicos e administrativos, melhorando eficiência e reduzindo tempo de tramitação.",
+      "isActive": true,
+      "currentPhase": "Execução",
+      "dependencies": ["P2"],
+      "dependentProjects": ["P9"],
+      "status": "active",
+      "priority": "high",
+      "icon": "fas fa-server",
+      "cluster": "Cluster 1 - Institucionalização",
+      "details": {
+        "objective": "Desenvolver soluções para automatizar processos jurídicos e administrativos, melhorando eficiência e reduzindo tempo de tramitação.",
+        "teamProfile": "Equipe especializada em: análise de processos jurídicos; desenvolvedores de RPA; especialistas em IA para análise de documentos; advogados e juristas; analistas de sistemas administrativos.",
+        "projectTeam": [
+          "Analista de Processos Jurídicos",
+          "Desenvolvedor RPA",
+          "Especialista em IA Jurídica",
+          "Advogado Consultor",
+          "Analista de Sistemas"
+        ],
+        "workPackages": [
+          "Mapeamento de processos jurídicos",
+          "Desenvolvimento de automações",
+          "Implementação de IA para análise",
+          "Testes e validação jurídica"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Mapeamento",
+            "description": "Análise detalhada dos processos jurídicos"
+          },
+          {
+            "name": "Sprint 2 - Automação",
+            "description": "Desenvolvimento das soluções de RPA"
+          },
+          {
+            "name": "Sprint 3 - IA Jurídica",
+            "description": "Implementação de IA para análise de documentos"
+          },
+          {
+            "name": "Sprint 4 - Validação",
+            "description": "Testes e validação com equipe jurídica"
+          }
+        ],
+        "successIndicators": [
+          "Redução no tempo de tramitação",
+          "Automação de processos implementada",
+          "Precisão na análise de documentos"
+        ]
+      }
+    },
+    {
+      "id": "P9",
+      "title": "Projetos piloto e experimentação",
+      "description": "Implementação de projetos em pequena escala para testar a viabilidade e eficácia de novas soluções de IA e RPA.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P8"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-flask",
+      "cluster": "Cluster 3 - Pesquisa e Inovação",
+      "details": {
+        "objective": "Implementar projetos em pequena escala para testar a viabilidade e eficácia de novas soluções de IA e RPA.",
+        "teamProfile": "Equipe de pesquisa e desenvolvimento com: pesquisadores em IA; desenvolvedores experimentais; analistas de viabilidade; especialistas em metodologia científica; gestores de projetos piloto.",
+        "projectTeam": [
+          "Pesquisador Principal",
+          "Desenvolvedor Experimental",
+          "Analista de Viabilidade",
+          "Metodologista",
+          "Gestor de Projetos Piloto"
+        ],
+        "workPackages": [
+          "Seleção de projetos piloto",
+          "Desenvolvimento experimental",
+          "Testes de viabilidade",
+          "Análise de resultados e escalabilidade"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Seleção",
+            "description": "Identificação e seleção de projetos piloto"
+          },
+          {
+            "name": "Sprint 2 - Desenvolvimento",
+            "description": "Desenvolvimento experimental das soluções"
+          },
+          {
+            "name": "Sprint 3 - Testes",
+            "description": "Execução de testes de viabilidade"
+          },
+          {
+            "name": "Sprint 4 - Análise",
+            "description": "Análise de resultados e potencial de escala"
+          }
+        ],
+        "successIndicators": [
+          "Projetos piloto executados",
+          "Taxa de sucesso dos experimentos",
+          "Viabilidade técnica e econômica comprovada"
+        ]
+      }
+    },
+    {
+      "id": "P10",
+      "title": "Divulgação científica e eventos",
+      "description": "Organização de eventos, seminários e publicações para disseminar os resultados das pesquisas e avanços tecnológicos.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P9"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-bullhorn",
+      "cluster": "Cluster 3 - Pesquisa e Inovação",
+      "details": {
+        "objective": "Organizar eventos, seminários e publicações para disseminar os resultados das pesquisas e avanços tecnológicos.",
+        "teamProfile": "Equipe de comunicação científica com: especialistas em divulgação científica; organizadores de eventos; editores e redatores científicos; especialistas em marketing digital; coordenadores de comunicação institucional.",
+        "projectTeam": [
+          "Coordenador de Divulgação Científica",
+          "Organizador de Eventos",
+          "Editor Científico",
+          "Especialista em Marketing Digital",
+          "Comunicador Institucional"
+        ],
+        "workPackages": [
+          "Planejamento de eventos e seminários",
+          "Produção de conteúdo científico",
+          "Execução de eventos",
+          "Publicação e disseminação de resultados"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1 - Planejamento",
+            "description": "Planejamento estratégico de eventos e publicações"
+          },
+          {
+            "name": "Sprint 2 - Produção",
+            "description": "Criação de conteúdo e material científico"
+          },
+          {
+            "name": "Sprint 3 - Execução",
+            "description": "Realização de eventos e seminários"
+          },
+          {
+            "name": "Sprint 4 - Disseminação",
+            "description": "Publicação e divulgação dos resultados"
+          }
+        ],
+        "successIndicators": [
+          "Número de eventos realizados",
+          "Alcance das publicações",
+          "Engajamento da comunidade científica"
+        ]
+      }
+    },
+    {
+      "id": "P11",
+      "title": "Digitalização e gestão documental",
+      "description": "Iniciativas para digitalizar acervos, otimizar a gestão de documentos e integrá-los a sistemas de automação.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-file-alt",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P12",
+      "title": "Webchat para interação com assistentes virtuais",
+      "description": "Desenvolvimento de interface web para interação dos usuários com os diversos assistentes virtuais da instituição.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P10"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-comments",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P13",
+      "title": "Assistente virtual para regras de negócio e regulamentos",
+      "description": "Assistente virtual para atender usuários sobre regras de negócio, regulamentos e demais documentações estáticas.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P12"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-robot",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P14",
+      "title": "Assistente virtual departamentalizado",
+      "description": "Assistente virtual para atender usuários sobre informações de unidades específicas com produção generativa a partir das bases de dados institucionais.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P12", "P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-building",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P15",
+      "title": "Assistente virtual para produção generativa de documentos",
+      "description": "Assistente virtual especializado na produção generativa de documentos e processos institucionais.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P12", "P11"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-file-signature",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P16",
+      "title": "Agentes computacionais",
+      "description": "Desenvolvimento de agentes computacionais autônomos para execução de tarefas complexas e tomada de decisões automatizadas.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P10"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "low",
+      "icon": "fas fa-cogs",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P17",
+      "title": "Plataforma de Dados Institucionais (API.Dados)",
+      "description": "Desenvolvimento de plataforma centralizada para acesso e integração de dados institucionais através de APIs padronizadas.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P9"],
+      "dependentProjects": ["P14", "P18"],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-exchange-alt",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P18",
+      "title": "Ferramenta de Business Analytics",
+      "description": "Desenvolvimento de ferramenta de Business Analytics para fornecer insights e análises de dados aos usuários.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-chart-bar",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P19",
+      "title": "Protokols.bot",
+      "description": "Ferramenta de automatização de processos, geração de documentos e operações no sistema de protocolo.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P11"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-clipboard-list",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P20",
+      "title": "Integrador Compras-Contratos-Financeiro",
+      "description": "Automatização dos fluxos de planejamento de compras, requisições, licitações, empenhos, liquidação e gestão de contratos, integrando SIPAC e sistemas de governo.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "high",
+      "icon": "fas fa-shopping-cart",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P21",
+      "title": "Administrativo.bot",
+      "description": "Automatização de processos complexos e/ou incompletos nos sistemas SIGAdmin, SIPAC e SIGRH.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-user-tie",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P22",
+      "title": "Acadêmico.bot",
+      "description": "Automatização de processos complexos e/ou incompletos no sistema SIGAA e seus orbitais.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-graduation-cap",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P23",
+      "title": "Automatização do AFD",
+      "description": "Automatização do Assentamento Digital Funcional a partir dos documentos produzidos pelos diversos sistemas internos e de governo.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P11", "P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-folder-open",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P24",
+      "title": "Automatização do SIAPE/SIGEPE",
+      "description": "Automatização de processos e integrações com os sistemas SIAPE e SIGEPE para gestão de recursos humanos.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": ["P17"],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "medium",
+      "icon": "fas fa-users",
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P25",
+      "title": "Projetos piloto e experimentação",
+      "description": "Implementação de projetos em pequena escala para testar a viabilidade e eficácia de novas soluções de IA e RPA.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "low",
+      "icon": "fas fa-flask",
+      "cluster": "Cluster 3 - Pesquisa e Inovação"
+    },
+    {
+      "id": "P26",
+      "title": "Divulgação científica e eventos",
+      "description": "Organização de eventos, seminários e publicações para disseminar os resultados das pesquisas e avanços tecnológicos.",
+      "isActive": false,
+      "currentPhase": "Planejamento",
+      "dependencies": [],
+      "dependentProjects": [],
+      "status": "planning",
+      "priority": "low",
+      "icon": "fas fa-bullhorn",
+      "cluster": "Cluster 3 - Pesquisa e Inovação"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "projects": [
+    {
+    "id": "p1",
+    "title": "P1 - Regulamentação e diretrizes para uso de IA e RPA nas IFES",
+    "description": "Elaboração de normas e boas práticas para a implementação segura e ética de IA e RPA.",
+    "isActive": true,
+    "currentPhase": "Fase 2 - Elaboração das diretrizes",
+    "dependencies": [],
+    "dependentProjects": ["P2", "P3", "P5", "P8"],
+    "status": "active",
+    "priority": "high",
+    "icon": "P1",
+    "details": {
+      "objective": "Elaborar normas e boas práticas para a implementação segura e ética de IA e RPA nas Instituições Federais de Ensino Superior.",
+      "workPackages": [
+        "Levantamento de requisitos legais e institucionais",
+        "Elaboração das diretrizes e normas",
+        "Consulta pública e revisões",
+        "Aprovação e publicação oficial"
+      ],
+      "sprints": [
+        {
+          "name": "Fase 1 - Levantamento",
+          "description": "Levantamento de requisitos legais e institucionais"
+        },
+        {
+          "name": "Fase 2 - Elaboração",
+          "description": "Elaboração das diretrizes e normas"
+        },
+        {
+          "name": "Fase 3 - Consulta",
+          "description": "Consulta pública e revisões"
+        },
+        {
+          "name": "Fase 4 - Aprovação",
+          "description": "Aprovação e publicação oficial"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p2",
+    "title": "P2 - Definição de eixos estratégicos e áreas prioritárias",
+    "description": "Identificação e priorização de áreas para aplicação de RPA e IA com maior impacto e retorno.",
+    "isActive": true,
+    "currentPhase": "Fase 1 - Mapeamento de processos",
+    "dependencies": ["P1"],
+    "dependentProjects": ["P8", "P9"],
+    "status": "planning",
+    "priority": "high",
+    "icon": "P2",
+    "details": {
+      "objective": "Identificar e priorizar áreas estratégicas para aplicação de RPA e IA com maior impacto e retorno para a instituição.",
+      "workPackages": [
+        "Mapeamento de processos institucionais",
+        "Análise de impacto e viabilidade",
+        "Priorização de áreas estratégicas",
+        "Definição de roadmap de implementação"
+      ],
+      "sprints": [
+        {
+          "name": "Fase 1 - Mapeamento",
+          "description": "Mapeamento de processos institucionais"
+        },
+        {
+          "name": "Fase 2 - Análise",
+          "description": "Análise de impacto e viabilidade"
+        },
+        {
+          "name": "Fase 3 - Priorização",
+          "description": "Priorização de áreas estratégicas"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p3",
+    "title": "P3 - Capacitação de servidores e docentes no uso de IA e RPA",
+    "description": "Programas de treinamento e workshops para desenvolver competências no uso e gestão de tecnologias de automação e IA.",
+    "isActive": false,
+    "currentPhase": "Aguardando início",
+    "dependencies": ["P1", "P2"],
+    "dependentProjects": [],
+    "status": "planning",
+    "priority": "medium",
+    "icon": "P3",
+    "details": {
+      "objective": "Desenvolver competências da comunidade acadêmica no uso e gestão de tecnologias de automação e IA.",
+      "workPackages": [
+        "Mapeamento de competências atuais",
+        "Desenvolvimento de conteúdo educacional",
+        "Execução de workshops e treinamentos",
+        "Avaliação e certificação"
+      ],
+      "sprints": [
+        {
+          "name": "Fase 1 - Diagnóstico",
+          "description": "Mapeamento das competências atuais e necessidades de capacitação"
+        },
+        {
+          "name": "Fase 2 - Desenvolvimento",
+          "description": "Criação de materiais e metodologias de ensino"
+        },
+        {
+          "name": "Fase 3 - Execução",
+          "description": "Realização dos treinamentos e workshops"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p4",
+    "title": "P4 - Desenvolvimento de competências em gestão de projetos de IA",
+    "description": "Capacitação de gestores e coordenadores para liderar projetos de implementação de IA e RPA.",
+    "isActive": false,
+    "currentPhase": "Aguardando início",
+    "dependencies": ["P1", "P3"],
+    "dependentProjects": [],
+    "status": "planning",
+    "priority": "medium",
+    "icon": "P4",
+    "details": {
+      "objective": "Desenvolver competências de gestão específicas para projetos de IA e RPA.",
+      "workPackages": [
+        "Identificação de perfis de gestores",
+        "Desenvolvimento de metodologia de gestão",
+        "Treinamento em gestão de projetos de IA",
+        "Certificação e acompanhamento"
+      ],
+      "sprints": [
+        {
+          "name": "Fase 1 - Mapeamento",
+          "description": "Identificação de gestores e necessidades"
+        },
+        {
+          "name": "Fase 2 - Metodologia",
+          "description": "Desenvolvimento de framework de gestão"
+        },
+        {
+          "name": "Fase 3 - Implementação",
+          "description": "Execução dos treinamentos"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p8",
+    "title": "P8 - Dimensionamento e planejamento de recursos tecnológicos",
+    "description": "Análise e planejamento da infraestrutura tecnológica necessária para implementação de soluções de IA e RPA.",
+    "isActive": true,
+    "currentPhase": "Fase 1 - Análise da infraestrutura atual",
+    "dependencies": ["P1", "P2"],
+    "dependentProjects": ["P9", "P10"],
+    "status": "in_progress",
+    "priority": "high",
+    "icon": "P8",
+    "details": {
+      "objective": "Dimensionar e planejar os recursos tecnológicos necessários para suportar as soluções de IA e RPA.",
+      "workPackages": [
+        "Análise da infraestrutura atual",
+        "Especificação de requisitos técnicos",
+        "Planejamento de capacidade",
+        "Elaboração de roadmap tecnológico"
+      ],
+      "sprints": [
+        {
+          "name": "Fase 1 - Diagnóstico",
+          "description": "Análise da infraestrutura atual"
+        },
+        {
+          "name": "Fase 2 - Especificação",
+          "description": "Definição de requisitos e arquitetura"
+        },
+        {
+          "name": "Fase 3 - Planejamento",
+          "description": "Elaboração do roadmap de implementação"
+        }
+      ]
+    }
+  }
+  ]
+}
