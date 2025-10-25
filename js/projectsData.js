@@ -533,8 +533,8 @@ const projectsData = {
       "id": "P6",
       "title": "Captação de recursos humanos e financeiros",
       "description": "Projeto de captação de recursos para assegurar a sustentabilidade financeira e o crescimento do Laboratório de Inovação com IA na UFFS.",
-      "escopo": "O escopo deste projeto consiste em planejar, articular e executar a captação de recursos financeiros para viabilizar o portfólio de 27 projetos de inovação e Inteligência Artificial da UFFS. Espera-se que este projeto alavanque recursos para viabilizar as atividades de capacitação, treinamento, despesas de viagem, diárias, transporte, licenças de software, aquisição de equipamentos, contratação de serviços e financiamento de bolsas para pesquisa, desenvolvimento e gestão dos projetos. Para isso, o projeto inclui a produção de um portfólio de propostas de captação customizadas, a criação de um pipeline estratégico de oportunidades de financiamento e a formalização dos acordos que garantam o repasse dos valores. Adicionalmente, será entregue um modelo de sustentabilidade financeira para assegurar a continuidade das iniciativas, limitando-se estritamente à atividade de captação, sem envolver a execução ou a gestão financeira dos projetos beneficiados.",
-      "naoEscopo": "\n- Execução dos Projetos Finais: Este projeto não executa as atividades dos 27 projetos (não desenvolve o software, não realiza os treinamentos, não compra os equipamentos). Sua função é captar os recursos para que os outros projetos possam executar.\n- Gestão Financeira e Prestação de Contas: A administração dos recursos captados e a posterior prestação de contas são de responsabilidade dos projetos beneficiados, embora o P6 possa auxiliar na elaboração dos orçamentos iniciais.\n- Decisão sobre Alocação de Recursos: A decisão final sobre quais projetos do portfólio serão priorizados em cada edital ou negociação pertence à governança estratégica da UFFS. O P6 é o braço executor da captação.",
+      "escopo": "O escopo deste projeto consiste em planejar, articular e executar a captação de recursos financeiros para viabilizar o portfólio de 29 projetos de inovação e Inteligência Artificial da UFFS. Espera-se que este projeto alavanque recursos para viabilizar as atividades de capacitação, treinamento, despesas de viagem, diárias, transporte, licenças de software, aquisição de equipamentos, contratação de serviços e financiamento de bolsas para pesquisa, desenvolvimento e gestão dos projetos. Para isso, o projeto inclui a produção de um portfólio de propostas de captação customizadas, a criação de um pipeline estratégico de oportunidades de financiamento e a formalização dos acordos que garantam o repasse dos valores. Adicionalmente, será entregue um modelo de sustentabilidade financeira para assegurar a continuidade das iniciativas, limitando-se estritamente à atividade de captação, sem envolver a execução ou a gestão financeira dos projetos beneficiados.",
+      "naoEscopo": "\n- Execução dos Projetos Finais: Este projeto não executa as atividades dos 29 projetos (não desenvolve o software, não realiza os treinamentos, não compra os equipamentos). Sua função é captar os recursos para que os outros projetos possam executar.\n- Gestão Financeira e Prestação de Contas: A administração dos recursos captados e a posterior prestação de contas são de responsabilidade dos projetos beneficiados, embora o P6 possa auxiliar na elaboração dos orçamentos iniciais.\n- Decisão sobre Alocação de Recursos: A decisão final sobre quais projetos do portfólio serão priorizados em cada edital ou negociação pertence à governança estratégica da UFFS. O P6 é o braço executor da captação.",
       "isActive": true,
       "currentPhase": "Fase 0 - Preparação para projeto",
       "dependencies": [],
@@ -639,7 +639,7 @@ const projectsData = {
             "activities": [
               "Pesquisar e selecionar editais/chamadas/contatos específicos (ex: editais do CNPq, programas do MGI)",
               "Analisar os requisitos e a aderência aos projetos da UFFS",
-              "Definir quais dos 27 projetos têm maior sinergia com a oportunidade",
+              "Definir quais dos 29 projetos têm maior sinergia com a oportunidade",
               "Fazer o contato inicial e o alinhamento estratégico"
             ],
             "deliverables": ["E1. Pipeline de Oportunidades (alimentado com os achados da Sprint)"]
@@ -2021,8 +2021,8 @@ const projectsData = {
     {
       "id": "P28",
       "title": "Aquisições, Contratações, Convênios e Acordos",
-      "description": "Este projeto funciona como o núcleo operacional e administrativo para todo o ecossistema de inovação da UFFS, sendo responsável por executar todos os trâmites burocráticos, legais e financeiros necessários para viabilizar as entregas dos outros 26 projetos.",
-      "escopo": "O escopo deste projeto é gerenciar e executar ponta a ponta o ciclo de vida de todas as demandas administrativas e legais geradas pelos 27 projetos do portfólio. Isso inclui a responsabilidade de conduzir os processos licitatórios para a aquisição de equipamentos e licenças de software, gerenciar a contratação de serviços de terceiros e de pessoal (bolsistas), e elaborar, negociar e formalizar todos os convênios, acordos de cooperação técnica e termos de parceria com outras instituições. O projeto atua como um facilitador central, traduzindo as necessidades técnicas dos projetos em processos administrativos formais e garantindo a conformidade com a legislação vigente.",
+      "description": "Este projeto funciona como o núcleo operacional e administrativo para todo o ecossistema de inovação da UFFS, sendo responsável por executar todos os trâmites burocráticos, legais e financeiros necessários para viabilizar as entregas dos outros 28 projetos.",
+      "escopo": "O escopo deste projeto é gerenciar e executar ponta a ponta o ciclo de vida de todas as demandas administrativas e legais geradas pelos 29 projetos do portfólio. Isso inclui a responsabilidade de conduzir os processos licitatórios para a aquisição de equipamentos e licenças de software, gerenciar a contratação de serviços de terceiros e de pessoal (bolsistas), e elaborar, negociar e formalizar todos os convênios, acordos de cooperação técnica e termos de parceria com outras instituições. O projeto atua como um facilitador central, traduzindo as necessidades técnicas dos projetos em processos administrativos formais e garantindo a conformidade com a legislação vigente.",
       "naoEscopo": "Definição da Necessidade Técnica: O projeto não define o que comprar ou contratar. Ele recebe a especificação técnica (o 'Termo de Referência') dos projetos demandantes e a transforma em um processo de compra/contratação. Captação de Recursos: A busca por recursos financeiros é responsabilidade do projeto P6. Este projeto atua após a garantia do recurso, para poder executá-lo. Gestão dos Contratos Pós-Assinatura: O acompanhamento da execução do serviço ou o uso do bem adquirido (a 'fiscalização do contrato') permanece sob a responsabilidade do projeto que originou a demanda.",
       "isActive": true,
       "currentPhase": "A Planejar",
@@ -2030,7 +2030,7 @@ const projectsData = {
         "P6"
       ],
       "dependentProjects": [
-        "P1", "P2", "P3", "P4", "P5", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18", "P19", "P20", "P21", "P22", "P23", "P24", "P25", "P26", "P27"
+        "P1", "P2", "P3", "P4", "P5", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18", "P19", "P20", "P21", "P22", "P23", "P24", "P25", "P26", "P27", "P29"
       ],
       "status": "planning",
       "projectManager": "Volnei",
@@ -2084,6 +2084,71 @@ const projectsData = {
         ]
       },
       "cluster": "Cluster 2 - Ferramentas e Soluções"
+    },
+    {
+      "id": "P29",
+      "title": "Plataforma de Colaboração e Software Livre",
+      "description": "Projeto responsável por criar e gerenciar um ambiente digital aberto e colaborativo, baseado em princípios de software livre. A plataforma servirá como um repositório central para as soluções de código-fonte desenvolvidas no âmbito do portfólio de inovação da UFFS, permitindo que outras instituições de ensino, desenvolvedores e a comunidade em geral possam utilizar, contribuir e evoluir essas ferramentas de forma estruturada e governada.",
+      "isActive": true,
+      "status": "planning",
+      "currentPhase": "A Planejar",
+      "projectManager": "Dalton",
+      "dependencies": ["P28"],
+      "dependentProjects": ["P6"],
+      "teamProfile": "Equipe técnica com forte experiência em ecossistemas de software livre, DevOps e gestão de comunidades. Competências em: arquitetura de sistemas distribuídos; ferramentas de controle de versão (Git); automação de integração e entrega contínua (CI/CD); gestão de fóruns e canais de comunicação; e documentação técnica.",
+      "projectTeam": [
+        "Gerente de Projeto / Produto",
+        "Arquiteto de Soluções / DevOps Sênior",
+        "Engenheiro de Software (Full-Stack)",
+        "Community Manager / Tech Writer"
+      ],
+      "priority": "high",
+      "icon": "P29",
+      "details": {
+        "objective": "Implantar uma plataforma de software livre para fomentar uma comunidade ativa de colaboradores em torno das soluções tecnológicas da UFFS, estabelecendo um modelo de governança claro para a gestão de contribuições, a priorização de novas funcionalidades (demandas) e a distribuição de versões estáveis, visando acelerar a inovação e maximizar o impacto público dos projetos.",
+        "workPackages": [
+          "Plataforma de Colaboração Implantada",
+          "Documento de Governança da Comunidade",
+          "Sistema de Gestão de Demandas (Feature Voting)",
+          "Documentação para Desenvolvedores e Contribuintes"
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1: Definição e Arquitetura (Mês 1)",
+            "description": "Planejar a fundação da plataforma. Escolher a pilha de tecnologia, desenhar a arquitetura da infraestrutura, elaborar o rascunho do documento de governança e definir os requisitos para o sistema de gestão de demandas."
+          },
+          {
+            "name": "Sprint 2: Implementação do Core da Plataforma (Mês 2-3)",
+            "description": "Construir o ambiente básico e essencial. Instalar e configurar a ferramenta de repositório de código, configurar os pipelines de CI/CD básicos, implantar a primeira versão do sistema de gestão de demandas e publicar a primeira versão do documento de governança."
+          },
+          {
+            "name": "Sprint 3: Onboarding e Lançamento (Mês 4)",
+            "description": "Trazer os primeiros projetos para a plataforma e lançá-la para a comunidade. Migrar o código-fonte dos primeiros 2-3 projetos da UFFS, criar a documentação detalhada, realizar um workshop de lançamento e abrir oficialmente a plataforma para o público."
+          }
+        ],
+        "scope": "O escopo deste projeto é o planejamento, desenvolvimento, implantação e gestão de uma plataforma digital completa que funcione como o ecossistema central para o desenvolvimento de software livre na UFFS. Isso inclui a entrega de quatro componentes principais: (1) A Infraestrutura Tecnológica: Implementar e manter o ambiente online, incluindo os repositórios de código-fonte (baseado em Git), o sistema de automação de integração e entrega contínua (CI/CD) e a hospedagem da plataforma. (2) A Governança da Comunidade: Elaborar, publicar e manter toda a documentação que rege a comunidade, como as políticas de licenciamento de software (ex: MIT, GPL), os padrões de codificação, o código de conduta e as regras para contribuição. (3) O Processo de Gestão de Demandas: Criar e gerenciar uma ferramenta transparente onde a comunidade possa submeter, discutir e votar em sugestões de novas funcionalidades (features) para os softwares hospedados. (4) A Documentação para Contribuintes: Produzir e manter os guias e tutoriais que ensinam novos desenvolvedores a configurar o ambiente, entender a arquitetura e submeter suas contribuições de forma eficaz.",
+         "outOfScope": [
+           "Desenvolvimento dos Produtos Finais: O projeto não é responsável por escrever o código ou desenvolver as funcionalidades dos softwares que são hospedados na plataforma (ex: o sistema acadêmico, a ferramenta de análise de dados, etc.). Essa responsabilidade continua sendo das equipes de cada produto específico.",
+           "Suporte Técnico ao Usuário Final: O projeto não presta suporte a usuários que têm dúvidas sobre como utilizar os softwares. O foco é gerenciar a plataforma e a comunidade de desenvolvedores, não o atendimento ao usuário final.",
+           "Tomada de Decisão Final sobre o Roadmap dos Softwares: Embora o projeto gerencie o sistema de votação de demandas, a decisão final sobre quais funcionalidades serão priorizadas e implementadas em cada software permanece com a equipe gestora ou o 'dono' de cada produto específico.",
+           "Marketing e Divulgação dos Softwares: A divulgação de um software específico para seu público-alvo não faz parte deste escopo. O foco é a gestão da comunidade de desenvolvedores e contribuidores."
+         ],
+        "deliverables": [
+          "E1. Plataforma de Colaboração Implantada: O ambiente online no ar, com repositórios, sistema de controle de versão e CI/CD configurados.",
+          "E2. Documento de Governança da Comunidade: As regras, licenças e processos para contribuição e gestão de demandas, publicados e acessíveis a todos.",
+          "E3. Sistema de Gestão de Demandas (Feature Voting): A ferramenta que permite à comunidade sugerir, discutir e priorizar novas funcionalidades.",
+          "E4. Documentação para Desenvolvedores e Contribuintes: Guias claros sobre como configurar o ambiente de desenvolvimento, como submeter contribuições e os padrões de código a serem seguidos."
+        ],
+        "successMetrics": [
+          "Plataforma online e operacional",
+          "Pelo menos 3 projetos migrados para a plataforma",
+          "Documento de governança publicado e aprovado",
+          "Sistema de gestão de demandas funcional",
+          "Documentação completa para desenvolvedores",
+          "Comunidade ativa com contribuições externas"
+        ]
+      },
+      "cluster": "Cluster 1 - Institucionalização"
     }
   ]
 };
