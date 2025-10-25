@@ -244,3 +244,109 @@
         font-size: 1.1rem;
     }
 }
+
+/* Work Package Styles */
+.work-package-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.work-package-item:last-child {
+    margin-bottom: 0;
+}
+
+.work-package-item h5 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.work-package-item p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.deliverables {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.deliverables strong {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.deliverables ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.deliverables li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.deliverables li:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para sprints */
+.sprint-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.sprint-item h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.sprint-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.sprint-activities, .sprint-deliverables {
+    margin-top: 1rem;
+}
+
+.sprint-activities h6, .sprint-deliverables h6 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.activities-list, .deliverables-list {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.activities-list li, .deliverables-list li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.activities-list li:last-child, .deliverables-list li:last-child {
+    margin-bottom: 0;
+}
+
+.deliverables-list li {
+    color: #2e7d32;
+    font-weight: 500;
+}

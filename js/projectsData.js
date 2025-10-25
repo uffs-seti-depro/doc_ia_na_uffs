@@ -5,6 +5,7 @@ const projectsData = {
       "id": "P1",
       "title": "Regulamentação e diretrizes para uso de IA e RPA na UFFS",
       "description": "Elaboração de normas e boas práticas para a implementação segura e ética de IA e RPA.",
+      "escopo": "Criar regulamentação do uso da IA nos diversos espaços da UFFS: atividades administrativas; atividades acadêmicas (sejam operacionais ou de produção de pesquisa ou produção científica); atividades privadas executadas dentro da UFFS ou na sua rede privada (VPN); uso da IA e/ou de dados sensíveis para o uso da IA ou destes dados para treinar modelos de IA",
       "isActive": true,
       "currentPhase": "Fase 0 - Preparação para projeto",
       "dependencies": [],
@@ -76,6 +77,8 @@ const projectsData = {
       "id": "P2",
       "title": "Definição de Eixos Estratégicos e Áreas Prioritárias para Implementação de IA na UFFS",
       "description": "Definir os eixos estratégicos e as áreas prioritárias de aplicação da Inteligência Artificial (IA) na UFFS, visando otimização de processos, melhoria de serviços e promoção da inovação.",
+      "escopo": "O escopo deste projeto consiste em realizar um diagnóstico completo da instituição e, a partir dele, desenvolver um plano estratégico abrangente para a implementação da Inteligência Artificial (IA) e da Automação Robótica de Processos (RPA). O objetivo final não é a implementação técnica da IA em si, mas sim a criação de toda a base estratégica, de governança e de planejamento que guiará futuras iniciativas de IA na UFFS. O projeto definirá ONDE, COMO e QUANDO a Inteligência Artificial será aplicada, garantindo que os esforços estejam alinhados aos objetivos de maior impacto e retorno para a universidade.",
+      "naoEscopo": "O que NÃO está no Escopo deste Projeto: Desenvolvimento ou Implementação Técnica: Nenhuma ferramenta de IA será codificada ou implementada. Aquisição de Tecnologia: Nenhuma compra de software ou hardware será realizada. Treinamento de Usuários Finais: A capacitação da comunidade acadêmica não está incluída. Gestão da Infraestrutura de TI: O dimensionamento de servidores e redes (tarefa do P8) está fora do escopo.",
       "isActive": true,
       "currentPhase": "Fase 1 - Mapeamento de processos",
       "dependencies": [
@@ -93,15 +96,16 @@ const projectsData = {
         "Giovani",
         "Jasiel",
         "Edivandro",
-        "Representantes do Gabinete do Reitor",
-        "Representantes das Áreas Finalísticas"
+        "Representante do Gabinete do Reitor",
+        "Representantes das Áreas Finalísticas",
+        "Representante do CCC"
       ],
       "priority": "high",
       "icon": "P2",
       "code": "IAUffs-EST-002",
       "duration": "4 meses",
       "details": {
-        "objective": "Identificar e priorizar áreas estratégicas para aplicação de RPA e IA com maior impacto e retorno para a UFFS.",
+        "objective": "Definir os eixos estratégicos, o roteiro de implementação e as regras de governança para a aplicação da Inteligência Artificial na UFFS, a fim de guiar futuras iniciativas de forma planejada, ética e alinhada aos objetivos de maior impacto para a instituição.",
         "strategicAxes": [
           {
             "name": "Eixo 1: Automação de Processos Críticos (RPA)",
@@ -184,69 +188,114 @@ const projectsData = {
         "workPackages": [
           {
             "id": "P2.1",
-            "name": "Diagnóstico Institucional",
-            "description": "Levantamento de processos atuais, mapeamento de dados e sistemas, identificação de necessidades e desafios."
+            "name": "Fase de Diagnóstico e Análise (Sprint 1)",
+            "description": "Mapeamento detalhado de processos institucionais em múltiplos contextos, análise de oportunidades e riscos, e levantamento de sistemas e dados.",
+            "deliverables": [
+              "Mapeamento de Processos Administrativos (gestão, finanças, RH, compras)",
+              "Mapeamento de Processos Acadêmicos (matrículas, registros, apoio à pesquisa, produção científica)",
+              "Mapeamento de Atividades em Ambiente Restrito (VPN, laboratórios, dados sensíveis)",
+              "Análise de Oportunidades e Riscos por contexto",
+              "Inventário de Sistemas Legados e Bases de Dados",
+              "Classificação de Dados (sensíveis, pessoais, estratégicos)"
+            ]
           },
           {
             "id": "P2.2",
-            "name": "Definição de Eixos Estratégicos",
-            "description": "Consolidação dos cinco eixos estratégicos, detalhamento de objetivos e escopo para cada um."
+            "name": "Fase de Definição Estratégica (Sprint 2)",
+            "description": "Estabelecimento dos eixos estratégicos, visão de longo prazo e filosofia de licenciamento para aplicação de IA na UFFS.",
+            "deliverables": [
+              "Definição dos 5 Eixos Estratégicos para IA",
+              "Declaração de Visão de Longo Prazo",
+              "Filosofia de Licenciamento e Desenvolvimento (livre, comercial, híbrido)",
+              "Estratégia de Desenvolvimento Interno vs. Aquisição de Modelos",
+              "Framework de Aplicação nos Âmbitos Administrativo, Acadêmico e de Pesquisa"
+            ]
           },
           {
             "id": "P2.3",
-            "name": "Priorização de Áreas de Aplicação",
-            "description": "Avaliação e seleção das áreas mais promissoras para projetos-piloto de IA."
+            "name": "Fase de Priorização e Planejamento (Sprint 3)",
+            "description": "Desenvolvimento de matriz de priorização, seleção de projetos piloto e criação de roadmap detalhado de implementação.",
+            "deliverables": [
+              "Matriz de Priorização Multidimensional (impacto, viabilidade, custo, alinhamento, sensibilidade de dados)",
+              "Seleção de Áreas Prioritárias para Projetos Piloto",
+              "Balanceamento entre Iniciativas Administrativas e de Inovação Acadêmica",
+              "Roadmap de Implementação para 12 meses",
+              "Especificação de Recursos Necessários (humanos, tecnológicos)"
+            ]
           },
           {
             "id": "P2.4",
-            "name": "Roadmap de Implementação",
-            "description": "Elaboração de um plano de ação detalhado, com fases, marcos e recursos necessários para os próximos 12-24 meses."
-          },
-          {
-            "id": "P2.5",
-            "name": "Plano de Governança de IA",
-            "description": "Desenvolvimento de diretrizes, políticas e estruturas para o uso ético, seguro e eficaz da IA na UFFS."
+            "name": "Fase de Governança e Formalização (Sprint 4)",
+            "description": "Elaboração de políticas de uso de IA e dados, estrutura de governança e documentação estratégica para aprovação institucional.",
+            "deliverables": [
+              "Políticas de Uso de Dados Sensíveis em IA",
+              "Diretrizes para Treinamento de Modelos com Dados Institucionais",
+              "Framework de Conformidade com LGPD",
+              "Proposta de Comitê de Ética em IA",
+              "Processos de Anonimização e Controle de Dados",
+              "Documentação Estratégica Completa para Aprovação Institucional"
+            ]
           }
         ],
         "sprints": [
           {
-            "name": "Fase 0 - Preparação para projeto",
-            "description": "Preparação inicial e planejamento do projeto"
-          },
-          {
-            "name": "Sprint 1: Diagnóstico e Análise (1 mês)",
-            "description": "Reuniões com áreas-chave para levantamento de processos. Mapeamento de sistemas legados e bases de dados. Análise de oportunidades e gargalos.",
+            "name": "Sprint 1: Diagnóstico e Análise (Mês 1)",
+            "description": "Entender profundamente o estado atual da UFFS. O foco é mapear o terreno para identificar onde a IA pode ser mais útil e quais desafios (técnicos e de dados) existem.",
             "activities": [
-              "Reuniões com áreas-chave para levantamento de processos",
-              "Mapeamento de sistemas legados e bases de dados",
-              "Análise de oportunidades e gargalos"
+              "Kick-off e Alinhamento: Reunião inicial com a equipe do projeto e stakeholders-chave para alinhar o escopo, os objetivos e o cronograma. Definição da agenda de reuniões com as áreas prioritárias.",
+              "Mapeamento de Processos e Contextos: Realizar workshops e entrevistas com os representantes das Pró-reitorias e outras áreas-chave. Documentar os processos, separando-os nas categorias definidas: (a) Administrativos, (b) Acadêmicos (operacionais e de pesquisa), e (c) Atividades em ambiente restrito (VPN).",
+              "Levantamento Técnico e de Dados: Em paralelo, a equipe técnica (Analista de Dados, Especialista em IA) mapeia os sistemas legados, APIs disponíveis e as principais bases de dados da instituição. Criar um 'inventário de dados', identificando onde residem dados potencialmente sensíveis ou estratégicos.",
+              "Análise de Oportunidades e Gargalos: Ao final da Sprint, a equipe se reúne para consolidar os achados, criando uma lista preliminar de processos que são fortes candidatos à otimização com IA/RPA."
+            ],
+            "deliverables": [
+              "✅ Mapa de Processos Institucionais (Versão Preliminar): Um documento ou diagrama visualizando os principais processos analisados e suas categorias.",
+              "✅ Inventário de Sistemas e Fontes de Dados: Uma planilha ou documento listando os sistemas e bases de dados, com notas sobre sua relevância e a presença de dados sensíveis.",
+              "✅ Lista de Oportunidades e Gargalos: Um relatório inicial destacando as principais 'dores' e oportunidades de melhoria identificadas."
             ]
           },
           {
-            "name": "Sprint 2: Definição de Estratégia (1 mês)",
-            "description": "Sessões de brainstorming e workshop com o Comitê Multidisciplinar. Elaboração e validação dos cinco eixos estratégicos. Definição de visão de longo prazo para a IA na UFFS.",
+            "name": "Sprint 2: Definição de Estratégia (Mês 2)",
+            "description": "Transformar o diagnóstico da Sprint 1 em uma visão estratégica clara. O foco é definir os pilares que guiarão as decisões futuras.",
             "activities": [
-              "Sessões de brainstorming e workshop com o Comitê Multidisciplinar",
-              "Elaboração e validação dos cinco eixos estratégicos",
-              "Definição de visão de longo prazo para a IA na UFFS"
+              "Workshop de Estratégia: Conduzir uma ou mais sessões de brainstorming com a equipe do projeto e o Comitê Multidisciplinar. Utilizar a lista de oportunidades da Sprint 1 como insumo para a discussão.",
+              "Elaboração dos Eixos Estratégicos: Com base no workshop, o Coordenador e o Especialista em Planejamento Estratégico redigem a proposta dos cinco eixos estratégicos (ex: 'Excelência Operacional', 'Inovação na Pesquisa', 'Sucesso do Estudante', etc.).",
+              "Definição da Filosofia de Uso: Discussão focada em definir a abordagem da UFFS para licenciamento de software (open source vs. comercial), desenvolvimento interno e a visão de longo prazo para a IA.",
+              "Validação da Estratégia: Apresentar a proposta dos eixos estratégicos e da visão de futuro para os gestores e áreas-chave para validação e feedback."
+            ],
+            "deliverables": [
+              "✅ Documento dos 5 Eixos Estratégicos: Uma apresentação ou documento formal descrevendo cada eixo, seu objetivo e como ele se conecta à missão da UFFS.",
+              "✅ Declaração de Visão de Longo Prazo para IA: Um parágrafo claro e inspirador que resume o futuro desejado.",
+              "✅ Diretriz sobre Filosofia de Licenciamento: Uma recomendação formal sobre a abordagem para aquisição e desenvolvimento de tecnologia de IA."
             ]
           },
           {
-            "name": "Sprint 3: Priorização e Roadmap (1 mês)",
-            "description": "Critérios de priorização de áreas de aplicação. Seleção das áreas prioritárias para os primeiros pilotos. Criação do roadmap de implementação inicial (primeiros 12 meses).",
+            "name": "Sprint 3: Priorização e Roadmap (Mês 3)",
+            "description": "Traduzir a estratégia em um plano de ação concreto. O foco é decidir o que será feito primeiro e como.",
             "activities": [
-              "Critérios de priorização de áreas de aplicação",
-              "Seleção das áreas prioritárias para os primeiros pilotos",
-              "Criação do roadmap de implementação inicial (primeiros 12 meses)"
+              "Desenvolvimento dos Critérios de Priorização: A equipe define os pesos para os critérios da matriz de priorização (ex: Impacto - 30%, Viabilidade Técnica - 20%, Custo Estimado - 20%, Alinhamento Estratégico - 20%, Sensibilidade dos Dados - 10%).",
+              "Sessão de Priorização: Aplicar a matriz às oportunidades levantadas na Sprint 1, classificando cada iniciativa potencial.",
+              "Seleção dos Projetos Piloto: Com base na classificação, a equipe seleciona um conjunto de 2 a 3 projetos para serem os primeiros pilotos.",
+              "Criação do Roadmap (12 meses): Detalhar o plano para os projetos piloto, definindo fases, etapas, recursos necessários e metas trimestrais. O roadmap deve visualizar o caminho para o primeiro ano de implementação."
+            ],
+            "deliverables": [
+              "✅ Matriz de Priorização Aprovada: A ferramenta (planilha ou documento) com os critérios e a classificação final das iniciativas.",
+              "✅ Lista de Projetos Piloto Selecionados: Um documento descrevendo os projetos escolhidos, seu escopo e objetivos.",
+              "✅ Roadmap Estratégico de Implementação (Primeiros 12 Meses): Uma apresentação visual (diagrama de Gantt, slide, etc.) mostrando a linha do tempo, as fases e as principais entregas dos projetos piloto."
             ]
           },
           {
-            "name": "Sprint 4: Governança e Formalização (1 mês)",
-            "description": "Desenvolvimento de rascunhos das políticas de IA e LGPD. Proposta da estrutura de Comitê de Ética em IA. Formalização dos documentos estratégicos para aprovação institucional.",
+            "name": "Sprint 4: Governança e Formalização (Mês 4)",
+            "description": "Criar as 'regras do jogo'. O foco é garantir que a implementação da IA seja ética, segura, legal e sustentável.",
             "activities": [
-              "Desenvolvimento de rascunhos das políticas de IA e LGPD",
-              "Proposta da estrutura de Comitê de Ética em IA",
-              "Formalização dos documentos estratégicos para aprovação institucional"
+              "Desenvolvimento das Políticas: A equipe, com apoio jurídico se necessário, redige o rascunho das políticas de uso de IA. Criar seções específicas para uso de dados sensíveis e para o treinamento de modelos, definindo o que é permitido, o que requer consentimento e o que é proibido.",
+              "Proposta do Comitê de Ética: Desenhar a estrutura do Comitê de Ética em IA: seu mandato, composição sugerida, frequência de reuniões e processo de tomada de decisão.",
+              "Consolidação e Revisão: Juntar todos os entregáveis das Sprints anteriores em um único pacote coeso de documentos estratégicos. Realizar uma revisão final com toda a equipe e stakeholders.",
+              "Formalização para Aprovação: Preparar a documentação final para ser submetida formalmente às instâncias de aprovação da UFFS."
+            ],
+            "deliverables": [
+              "✅ Rascunho das Políticas de IA e Conformidade com LGPD: O documento de políticas pronto para revisão e aprovação.",
+              "✅ Proposta da Estrutura do Comitê de Ética em IA: Um documento detalhando o propósito e o funcionamento do comitê.",
+              "✅ Pacote de Documentos Estratégicos Finalizado: O conjunto completo de todos os artefatos produzidos nas sprints anteriores, organizados e formatados para aprovação institucional."
             ]
           }
         ],
@@ -484,6 +533,8 @@ const projectsData = {
       "id": "P6",
       "title": "Captação de recursos humanos e financeiros",
       "description": "Projeto de captação de recursos para assegurar a sustentabilidade financeira e o crescimento do Laboratório de Inovação com IA na UFFS.",
+      "escopo": "O escopo deste projeto consiste em planejar, articular e executar a captação de recursos financeiros para viabilizar o portfólio de 27 projetos de inovação e Inteligência Artificial da UFFS. Espera-se que este projeto alavanque recursos para viabilizar as atividades de capacitação, treinamento, despesas de viagem, diárias, transporte, licenças de software, aquisição de equipamentos, contratação de serviços e financiamento de bolsas para pesquisa, desenvolvimento e gestão dos projetos. Para isso, o projeto inclui a produção de um portfólio de propostas de captação customizadas, a criação de um pipeline estratégico de oportunidades de financiamento e a formalização dos acordos que garantam o repasse dos valores. Adicionalmente, será entregue um modelo de sustentabilidade financeira para assegurar a continuidade das iniciativas, limitando-se estritamente à atividade de captação, sem envolver a execução ou a gestão financeira dos projetos beneficiados.",
+      "naoEscopo": "\n- Execução dos Projetos Finais: Este projeto não executa as atividades dos 27 projetos (não desenvolve o software, não realiza os treinamentos, não compra os equipamentos). Sua função é captar os recursos para que os outros projetos possam executar.\n- Gestão Financeira e Prestação de Contas: A administração dos recursos captados e a posterior prestação de contas são de responsabilidade dos projetos beneficiados, embora o P6 possa auxiliar na elaboração dos orçamentos iniciais.\n- Decisão sobre Alocação de Recursos: A decisão final sobre quais projetos do portfólio serão priorizados em cada edital ou negociação pertence à governança estratégica da UFFS. O P6 é o braço executor da captação.",
       "isActive": true,
       "currentPhase": "Fase 0 - Preparação para projeto",
       "dependencies": [],
@@ -496,12 +547,6 @@ const projectsData = {
       "cluster": "Cluster 1 - Institucionalização",
       "details": {
         "objective": "Manter projetos, criar rede de contatos, prospectar editais e submeter projetos de captação de recursos.",
-        "specificObjectives": [
-          "Captar Recursos junto a Agências de Fomento: Obter financiamento de instituições nacionais como CNPq, CAPES, FINEP e BNDES para projetos de pesquisa, desenvolvimento e infraestrutura.",
-          "Estabelecer Parcerias Financeiras Estratégicas: Firmar convênios e acordos financeiros com instituições públicas, empresas privadas e fundações.",
-          "Desenvolver Modelo de Sustentabilidade Financeira: Criar e implementar um plano de longo prazo para a autossuficiência financeira do laboratório, explorando diversas fontes de receita.",
-          "Criar Pipeline de Financiamento Contínuo e Diversificado: Manter um fluxo constante de oportunidades de captação, diversificando as fontes para reduzir a dependência de um único tipo de financiamento."
-        ],
         "workPackages": [
           "C.1: Propostas CNPq/CAPES - 6 meses - Meta: R$ 800.000,00",
           "C.2: Editais FINEP/BNDES - 8 meses - Meta: R$ 1.200.000,00",
@@ -559,100 +604,70 @@ const projectsData = {
             "type": "productivity"
           }
         ],
+        "deliverables": [
+          {
+            "id": "E1",
+            "name": "Pipeline de Oportunidades",
+            "description": "Uma base de dados ativa e atualizada com todos os editais, programas e contatos de fomento mapeados e classificados por prioridade."
+          },
+          {
+            "id": "E2", 
+            "name": "Propostas de Captação Submetidas",
+            "description": "O conjunto de todos os projetos e propostas técnicas e financeiras desenvolvidas e enviadas às fontes de financiamento."
+          },
+          {
+            "id": "E3",
+            "name": "Acordos e Convênios Formalizados", 
+            "description": "Os contratos, convênios e termos de parceria assinados que garantem o repasse dos recursos."
+          },
+          {
+            "id": "E4",
+            "name": "Modelo de Sustentabilidade Financeira",
+            "description": "Um documento estratégico que descreve o plano de longo prazo para a autossuficiência financeira do ecossistema de IA."
+          },
+          {
+            "id": "E5",
+            "name": "Relatórios de Desempenho de Captação",
+            "description": "Dashboards e relatórios periódicos que acompanham o progresso em relação às metas (valor captado, taxa de sucesso, etc.)."
+          }
+        ],
         "sprints": [
           {
-            "name": "Fase 0 - Preparação para projeto",
-            "description": "Preparação inicial e planejamento do projeto"
+            "name": "Sprint 1: Mapeamento e Estratégia",
+            "description": "Identificar as melhores oportunidades dentro do pacote de trabalho.",
+            "duration": "1-2 meses",
+            "activities": [
+              "Pesquisar e selecionar editais/chamadas/contatos específicos (ex: editais do CNPq, programas do MGI)",
+              "Analisar os requisitos e a aderência aos projetos da UFFS",
+              "Definir quais dos 27 projetos têm maior sinergia com a oportunidade",
+              "Fazer o contato inicial e o alinhamento estratégico"
+            ],
+            "deliverables": ["E1. Pipeline de Oportunidades (alimentado com os achados da Sprint)"]
           },
           {
-            "name": "C.1 Sprint 1 - Pesquisa e Seleção de Editais",
-            "description": "Identificação contínua de editais abertos e futuros. Análise de elegibilidade e aderência aos objetivos do laboratório. Priorização dos editais mais promissores. Formação de equipes multidisciplinares para cada edital selecionado.",
-            "duration": "Mês 1",
-            "workPackage": "C.1: Propostas CNPq/CAPES"
+            "name": "Sprint 2: Elaboração da Proposta", 
+            "description": "Construir uma proposta robusta e competitiva.",
+            "duration": "2-3 meses",
+            "activities": [
+              "Desenvolver o pré-projeto (escopo, objetivos, metodologia)",
+              "Estruturar o orçamento detalhado (custos de equipe, hardware, diárias, etc.)",
+              "Coletar a documentação necessária (currículos, certidões, cartas de apoio)",
+              "Escrever a proposta técnica e financeira completa"
+            ],
+            "deliverables": ["E2. Propostas de Captação Submetidas (a versão preliminar da proposta é o principal artefato desta Sprint)"]
           },
           {
-            "name": "C.1 Sprint 2 - Elaboração de Pré-Projetos e Documentação",
-            "description": "Desenvolvimento de esboços de propostas (sumário executivo, objetivos, metodologia). Levantamento de requisitos documentais e burocráticos. Coleta de currículos e informações dos pesquisadores envolvidos. Validação interna dos pré-projetos com a gestão do laboratório.",
-            "duration": "Mês 2-3",
-            "workPackage": "C.1: Propostas CNPq/CAPES"
-          },
-          {
-            "name": "C.1 Sprint 3 - Desenvolvimento e Submissão Final",
-            "description": "Escrita detalhada das propostas técnicas e financeiras. Revisão e ajustes de linguagem e conformidade. Obtenção de pareceres internos e externos (se aplicável). Submissão formal das propostas nas plataformas das agências. Acompanhamento pós-submissão e resposta a diligências.",
-            "duration": "Mês 4-6",
-            "workPackage": "C.1: Propostas CNPq/CAPES"
-          },
-          {
-            "name": "C.2 Sprint 1 - Análise de Chamadas e Requisitos Específicos",
-            "description": "Monitoramento ativo de chamadas públicas e programas de fomento. Estudo aprofundado dos termos de referência e linhas de crédito. Avaliação da capacidade institucional para atender aos critérios. Identificação de parceiros industriais ou tecnológicos (se exigido).",
-            "duration": "Mês 1-2",
-            "workPackage": "C.2: Editais FINEP/BNDES"
-          },
-          {
-            "name": "C.2 Sprint 2 - Formulação de Propostas Técnicas e Financeiras Detalhadas",
-            "description": "Estruturação do plano de negócios e viabilidade econômica. Elaboração de cronogramas físico-financeiros. Definição de indicadores de desempenho e impacto esperados. Preparação da documentação jurídica e financeira da UFFS.",
-            "duration": "Mês 3-5",
-            "workPackage": "C.2: Editais FINEP/BNDES"
-          },
-          {
-            "name": "C.2 Sprint 3 - Validação e Submissão Qualificada",
-            "description": "Revisão crítica das propostas por especialistas externos (se possível). Ajustes finais baseados em feedback. Formalização da submissão nos sistemas eletrônicos. Preparação para eventuais rodadas de negociação e apresentação.",
-            "duration": "Mês 6-8",
-            "workPackage": "C.2: Editais FINEP/BNDES"
-          },
-          {
-            "name": "C.3 Sprint 1 - Mapeamento de Oportunidades e Contato Inicial",
-            "description": "Pesquisa de programas e projetos da RNP alinhados com IA e inovação. Identificação de pontos de contato e áreas de interesse comum. Envio de apresentações institucionais e propostas iniciais de colaboração.",
-            "duration": "Mês 1",
-            "workPackage": "C.3: Parcerias RNP"
-          },
-          {
-            "name": "C.3 Sprint 2 - Elaboração de Acordos e Planos Conjuntos",
-            "description": "Participação em reuniões e workshops com representantes da RNP. Desenvolvimento de termos de referência para projetos colaborativos. Definição de escopo, responsabilidades e modelos de financiamento.",
-            "duration": "Mês 2-3",
-            "workPackage": "C.3: Parcerias RNP"
-          },
-          {
-            "name": "C.3 Sprint 3 - Negociação e Formalização da Parceria",
-            "description": "Negociação de cláusulas contratuais e condições financeiras. Revisão jurídica e aprovação dos termos de parceria. Assinatura do convênio ou contrato. Planejamento das atividades conjuntas e alocação de recursos.",
-            "duration": "Mês 4",
-            "workPackage": "C.3: Parcerias RNP"
-          },
-          {
-            "name": "C.4 Sprint 1 - Identificação de Fundações e Alinhamento de Linhas",
-            "description": "Mapeamento das FAPs com editais relevantes para IA e inovação. Análise das linhas de pesquisa e fomento específicas de cada FAP. Contato com pesquisadores e equipes que já obtiveram sucesso em FAPs.",
-            "duration": "Mês 1-2",
-            "workPackage": "C.4: Fundações Estaduais (FAPs)"
-          },
-          {
-            "name": "C.4 Sprint 2 - Preparação de Documentação e Articulação Local",
-            "description": "Adaptação de propostas existentes para os requisitos das FAPs. Obtenção de cartas de apoio e endossos de parceiros locais. Organização de reuniões com representantes das FAPs para apresentação.",
-            "duration": "Mês 3-4",
-            "workPackage": "C.4: Fundações Estaduais (FAPs)"
-          },
-          {
-            "name": "C.4 Sprint 3 - Apresentação de Propostas e Follow-up",
-            "description": "Submissão formal das propostas. Participação em bancas de avaliação (se aplicável). Acompanhamento ativo do processo de avaliação e resposta a questionamentos. Preparação para a implementação de projetos aprovados.",
-            "duration": "Mês 5-6",
-            "workPackage": "C.4: Fundações Estaduais (FAPs)"
-          },
-          {
-            "name": "C.5 Sprint 1 - Prospecção de Empresas e Segmentos de Mercado",
-            "description": "Mapeamento de empresas do setor de tecnologia, indústria e serviços com interesse em IA. Análise de potenciais sinergias e necessidades tecnológicas. Criação de um banco de dados de contatos e informações estratégicas.",
-            "duration": "Mês 1-3",
-            "workPackage": "C.5: Parcerias Privadas"
-          },
-          {
-            "name": "C.5 Sprint 2 - Desenvolvimento de Propostas de Valor e Negociação",
-            "description": "Elaboração de portfólio de projetos e capacidades do laboratório. Criação de propostas personalizadas, destacando o retorno sobre o investimento. Realização de reuniões de apresentação e negociação com potenciais parceiros. Definição de modelos de parceria (co-desenvolvimento, patrocínio, serviços, etc.).",
-            "duration": "Mês 4-8",
-            "workPackage": "C.5: Parcerias Privadas"
-          },
-          {
-            "name": "C.5 Sprint 3 - Contratualização e Gestão de Relacionamento",
-            "description": "Elaboração e revisão de contratos e acordos de confidencialidade. Formalização das parcerias e início das atividades. Estabelecimento de canais de comunicação e relatórios de progresso. Desenvolvimento de um plano de gestão de relacionamento para sustentabilidade.",
-            "duration": "Mês 9-12",
-            "workPackage": "C.5: Parcerias Privadas"
+            "name": "Sprint 3: Submissão e Negociação",
+            "description": "Finalizar, submeter e formalizar o financiamento.",
+            "duration": "2-3 meses", 
+            "activities": [
+              "Realizar a revisão final e obter validações internas",
+              "Submeter a proposta na plataforma ou canal oficial",
+              "Acompanhar o processo de avaliação, respondendo a diligências",
+              "Negociar cláusulas e ajustar o plano de trabalho",
+              "Formalizar a parceria com a assinatura de contratos/convênios"
+            ],
+            "deliverables": ["E2. Propostas de Captação Submetidas (versão final)", "E3. Acordos e Convênios Formalizados"]
           }
         ],
         "teamProfile": "Equipe especializada em: gestão documental e arquivística; especialistas em digitalização; desenvolvedores de sistemas de gestão; especialistas em OCR e processamento de documentos; analistas de metadados.",
@@ -686,7 +701,7 @@ const projectsData = {
       "title": "Dimensionamento e planejamento de recursos tecnológicos",
       "description": "Análise e planejamento da infraestrutura tecnológica necessária para implementação de soluções de IA e RPA.",
       "isActive": true,
-      "currentPhase": "Fase 1 - Análise da infraestrutura atual",
+      "currentPhase": "Fase 0 - Preparação para projeto",
       "dependencies": [
         "P1",
         "P2"
@@ -696,14 +711,14 @@ const projectsData = {
         "P10"
       ],
       "status": "planning",
-      "projectManager": "Ocimar",
+      "projectManager": "Giovani",
       "teamProfile": "Equipe com competências em: arquitetura de sistemas e infraestrutura tecnológica; especialistas em IA e computação de alto desempenho; analistas de capacidade e performance; especialistas em segurança da informação; gestores de TI e planejamento tecnológico.",
       "projectTeam": [
-        "Arquiteto de Sistemas",
-        "Especialista em IA/HPC",
-        "Analista de Capacidade",
-        "Especialista em Segurança",
-        "Gestor de TI"
+        "Jefferson Caramori",
+        "Samuel Feitosa",
+        "Silvia",
+        "Volnei",
+        "Geancarlo"
       ],
       "priority": "high",
       "icon": "P8",
@@ -2002,6 +2017,73 @@ const projectsData = {
         ]
       },
       "cluster": "Cluster 3 - Pesquisa e Inovação"
+    },
+    {
+      "id": "P28",
+      "title": "Aquisições, Contratações, Convênios e Acordos",
+      "description": "Este projeto funciona como o núcleo operacional e administrativo para todo o ecossistema de inovação da UFFS, sendo responsável por executar todos os trâmites burocráticos, legais e financeiros necessários para viabilizar as entregas dos outros 26 projetos.",
+      "escopo": "O escopo deste projeto é gerenciar e executar ponta a ponta o ciclo de vida de todas as demandas administrativas e legais geradas pelos 27 projetos do portfólio. Isso inclui a responsabilidade de conduzir os processos licitatórios para a aquisição de equipamentos e licenças de software, gerenciar a contratação de serviços de terceiros e de pessoal (bolsistas), e elaborar, negociar e formalizar todos os convênios, acordos de cooperação técnica e termos de parceria com outras instituições. O projeto atua como um facilitador central, traduzindo as necessidades técnicas dos projetos em processos administrativos formais e garantindo a conformidade com a legislação vigente.",
+      "naoEscopo": "Definição da Necessidade Técnica: O projeto não define o que comprar ou contratar. Ele recebe a especificação técnica (o 'Termo de Referência') dos projetos demandantes e a transforma em um processo de compra/contratação. Captação de Recursos: A busca por recursos financeiros é responsabilidade do projeto P6. Este projeto atua após a garantia do recurso, para poder executá-lo. Gestão dos Contratos Pós-Assinatura: O acompanhamento da execução do serviço ou o uso do bem adquirido (a 'fiscalização do contrato') permanece sob a responsabilidade do projeto que originou a demanda.",
+      "isActive": true,
+      "currentPhase": "A Planejar",
+      "dependencies": [
+        "P6"
+      ],
+      "dependentProjects": [
+        "P1", "P2", "P3", "P4", "P5", "P7", "P8", "P9", "P10", "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18", "P19", "P20", "P21", "P22", "P23", "P24", "P25", "P26", "P27"
+      ],
+      "status": "planning",
+      "projectManager": "Volnei",
+      "teamProfile": "Equipe multidisciplinar com profundo conhecimento dos processos administrativos, licitatórios e jurídicos do setor público, com competências em: pregões e licitações; gestão de contratos; elaboração de termos de referência; direito administrativo; formalização de convênios e acordos de cooperação técnica.",
+      "projectTeam": [
+        "Volnei (Gerente de Projetos)",
+        "Especialista em Licitações e Contratos (Pregoeiro)",
+        "Analista de Compras e Aquisições",
+        "Assessor Jurídico (Especialista em Convênios e Acordos)",
+        "Analista de Tecnologia da Informação",
+        "Docente do CCC especialista em IA",
+        "Assistente Administrativo (Apoio Operacional)"
+      ],
+      "priority": "critical",
+      "icon": "P28",
+      "details": {
+        "objective": "Centralizar e executar com agilidade e conformidade todos os processos de aquisição de bens, contratação de serviços, formalização de convênios e celebração de acordos, garantindo que os projetos do portfólio de inovação tenham os recursos materiais e humanos necessários para operar sem impedimentos burocráticos.",
+        "workPackages": [
+          "E1. Processos Licitatórios Concluídos: Editais de licitação publicados, pregões realizados e atas de registro de preços finalizadas.",
+          "E2. Contratos e Atas de Empenho Assinadas: Todos os instrumentos contratuais para serviços, pessoal (bolsistas) e aquisições devidamente formalizados e assinados.",
+          "E3. Convênios e Acordos de Cooperação Vigentes: Os documentos que formalizam parcerias com outras instituições (públicas ou privadas) assinados e publicados.",
+          "E4. Catálogo de Fornecedores e Parceiros Qualificados: Uma base de dados de empresas e instituições com histórico de fornecimento e parceria, para agilizar futuros processos."
+        ],
+        "sprints": [
+          {
+            "name": "Sprint 1: Análise e Preparação da Demanda (1-2 semanas)",
+            "description": "Receber e validar as necessidades dos outros projetos. Atividades: Receber e analisar os Termos de Referência e especificações técnicas; Verificar a disponibilidade orçamentária junto ao projeto demandante; Definir a modalidade de contratação/aquisição (licitação, dispensa, etc.); Elaborar a minuta do edital ou do contrato/convênio."
+          },
+          {
+            "name": "Sprint 2: Execução do Processo (2-4 semanas)",
+            "description": "Conduzir o processo administrativo no sistema público. Atividades: Publicar o edital de licitação; Conduzir o pregão e a fase de lances; Realizar cotações de preços para dispensas de licitação; Enviar minutas de convênios para análise das partes envolvidas."
+          },
+          {
+            "name": "Sprint 3: Formalização e Contratualização (1-2 semanas)",
+            "description": "Concluir o processo e oficializar a relação jurídica. Atividades: Adjudicar e homologar o resultado da licitação; Elaborar e coletar as assinaturas do contrato ou termo de convênio; Emitir a nota de empenho; Comunicar o projeto demandante que o recurso está pronto para ser utilizado."
+          }
+        ],
+        "teamProfile": "Equipe multidisciplinar com profundo conhecimento dos processos administrativos, licitatórios e jurídicos do setor público, com competências em: pregões e licitações; gestão de contratos; elaboração de termos de referência; direito administrativo; formalização de convênios e acordos de cooperação técnica.",
+        "projectTeam": [
+          "Volnei (Gerente de Projetos)",
+          "Especialista em Licitações e Contratos (Pregoeiro)",
+          "Analista de Compras e Aquisições",
+          "Assessor Jurídico (Especialista em Convênios e Acordos)",
+          "Assistente Administrativo (Apoio Operacional)"
+        ],
+        "successIndicators": [
+          "100% dos processos licitatórios concluídos dentro do prazo",
+          "Conformidade legal de todos os contratos e convênios",
+          "Redução do tempo médio de tramitação administrativa",
+          "Base de fornecedores qualificados estabelecida"
+        ]
+      },
+      "cluster": "Cluster 2 - Ferramentas e Soluções"
     }
   ]
 };

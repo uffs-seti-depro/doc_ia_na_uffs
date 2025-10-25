@@ -198,6 +198,20 @@ class ProjectManager {
                         <p>${project.details?.objective || 'Objetivo a ser definido'}</p>
                     </div>
                     
+                    ${project.escopo ? `
+                    <div class="modal-section">
+                        <h4>🎯 Escopo</h4>
+                        <p>${project.escopo}</p>
+                    </div>
+                    ` : ''}
+                    
+                    ${project.naoEscopo ? `
+                    <div class="modal-section">
+                        <h4>🚫 Não Escopo</h4>
+                        <p>${project.naoEscopo.replace(/\n/g, '<br>')}</p>
+                    </div>
+                    ` : ''}
+                    
                     ${project.details?.specificObjectives ? `
                     <div class="modal-section">
                         <h4>🎯 Objetivos Específicos</h4>
@@ -209,13 +223,13 @@ class ProjectManager {
                     
                     <div class="modal-section">
                         <h4>👥 Perfil da Equipe</h4>
-                        <p>${project.details?.teamProfile || 'Perfil da equipe a ser definido'}</p>
+                        <p>${project.teamProfile || project.details?.teamProfile || 'Perfil da equipe a ser definido'}</p>
                     </div>
                     
                     <div class="modal-section">
                         <h4>🧑‍💼 Membros da Equipe</h4>
                         <ul>
-                            ${project.details?.projectTeam ? project.details.projectTeam.map(member => `<li>${member}</li>`).join('') : '<li>Membros da equipe a serem definidos</li>'}
+                            ${project.projectTeam ? project.projectTeam.map(member => `<li>${member}</li>`).join('') : '<li>Membros da equipe a serem definidos</li>'}
                         </ul>
                     </div>
                     
@@ -249,9 +263,26 @@ class ProjectManager {
                     
                     <div class="modal-section">
                         <h4>📦 Pacotes de Trabalho</h4>
-                        <ul>
-                            ${project.details?.workPackages ? project.details.workPackages.map(wp => `<li>${wp}</li>`).join('') : '<li>Pacotes de trabalho a serem definidos</li>'}
-                        </ul>
+                        ${project.details?.workPackages ? project.details.workPackages.map(wp => {
+                            if (typeof wp === 'string') {
+                                return `<div class="work-package-item"><p>${wp}</p></div>`;
+                            } else {
+                                return `
+                                    <div class="work-package-item">
+                                        <h5>${wp.name}</h5>
+                                        ${wp.description ? `<p><strong>Descrição:</strong> ${wp.description}</p>` : ''}
+                                        ${wp.deliverables && wp.deliverables.length > 0 ? `
+                                            <div class="deliverables">
+                                                <strong>Entregas:</strong>
+                                                <ul>
+                                                    ${wp.deliverables.map(deliverable => `<li>${deliverable}</li>`).join('')}
+                                                </ul>
+                                            </div>
+                                        ` : ''}
+                                    </div>
+                                `;
+                            }
+                        }).join('') : '<div class="work-package-item">Pacotes de trabalho a serem definidos</div>'}
                     </div>
                     
                     <div class="modal-section">
@@ -264,9 +295,25 @@ class ProjectManager {
                                     return `
                                         <div class="sprint-item">
                                             <h5>${sprint.name}</h5>
-                                            ${sprint.description ? `<p>${sprint.description}</p>` : ''}
+                                            ${sprint.description ? `<p class="sprint-description">${sprint.description}</p>` : ''}
                                             ${sprint.duration ? `<p><strong>Duração:</strong> ${sprint.duration}</p>` : ''}
                                             ${sprint.workPackage ? `<p><strong>Pacote:</strong> ${sprint.workPackage}</p>` : ''}
+                                            ${sprint.activities && sprint.activities.length > 0 ? `
+                                                <div class="sprint-activities">
+                                                    <h6>📋 Atividades Principais:</h6>
+                                                    <ul class="activities-list">
+                                                        ${sprint.activities.map(activity => `<li>${activity}</li>`).join('')}
+                                                    </ul>
+                                                </div>
+                                            ` : ''}
+                                            ${sprint.deliverables && sprint.deliverables.length > 0 ? `
+                                                <div class="sprint-deliverables">
+                                                    <h6>📦 Entregáveis:</h6>
+                                                    <ul class="deliverables-list">
+                                                        ${sprint.deliverables.map(deliverable => `<li>${deliverable}</li>`).join('')}
+                                                    </ul>
+                                                </div>
+                                            ` : ''}
                                         </div>
                                     `;
                                 }

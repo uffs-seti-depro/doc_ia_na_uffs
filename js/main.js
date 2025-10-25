@@ -143,42 +143,92 @@ class ClusterNavigation {
                 this.bindClusterCards();
             }, 500);
         });
+        
+        // Also try to bind after window load as a fallback
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                this.bindClusterCards();
+            }, 1000);
+        });
     }
 
     bindClusterCards() {
         const clusterCards = document.querySelectorAll('.cluster-card');
         
+        if (clusterCards.length === 0) {
+            console.log('Cluster cards not found, retrying in 500ms...');
+            setTimeout(() => this.bindClusterCards(), 500);
+            return;
+        }
+        
+        console.log(`Found ${clusterCards.length} cluster cards, binding navigation...`);
+        
         clusterCards.forEach((card, index) => {
-            card.style.cursor = 'pointer';
-            card.addEventListener('click', () => {
+            // Remove existing event listeners to avoid duplicates
+            card.removeEventListener('click', card._clusterClickHandler);
+            
+            // Create and store the click handler
+            card._clusterClickHandler = () => {
+                console.log(`Navigating to cluster ${index + 1}`);
                 this.navigateToCluster(index + 1);
-            });
+            };
             
-            // Add hover effect
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
+            card.addEventListener('click', card._clusterClickHandler);
             
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
+            // Add hover effect (only if not already added)
+            if (!card._hoverBound) {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+                
+                card._hoverBound = true;
+            }
         });
     }
 
     navigateToCluster(clusterNumber) {
         const targetId = `cluster-${clusterNumber}`;
+        console.log(`Looking for element with ID: ${targetId}`);
         
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            console.log(`Found target element, scrolling to cluster ${clusterNumber}`);
             
-            // Add highlight effect
-            this.highlightCluster(targetElement);
+            // First scroll to the projects section
+            const projectsSection = document.getElementById('projetos-portfolio');
+            if (projectsSection) {
+                projectsSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Then scroll to the specific cluster after a short delay
+                setTimeout(() => {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Add highlight effect
+                    this.highlightCluster(targetElement);
+                }, 500);
+            } else {
+                // Fallback: scroll directly to cluster
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                this.highlightCluster(targetElement);
+            }
         } else {
-            console.log(`Element with ID ${targetId} not found`);
+            console.log(`Element with ID ${targetId} not found. Available cluster elements:`);
+            const allClusters = document.querySelectorAll('[id^="cluster-"]');
+            allClusters.forEach(el => console.log(`- ${el.id}`));
         }
     }
 
