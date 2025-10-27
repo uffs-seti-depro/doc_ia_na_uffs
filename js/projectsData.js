@@ -343,7 +343,7 @@ const projectsData = {
     },
     {
       "id": "P3",
-      "title": "Capacitação Estratégica de Servidores e Docentes no Uso de Inteligência Artificial e RPA na UFFS",
+      "title": "Desenvolvimento da Equipe da UFFS no Uso da Inteligência Artificial e RPA",
       "description": "Desenvolvimento e implementação de um programa de capacitação multifacetado, composto por trilhas de aprendizagem modulares, com o objetivo de desenvolver competências essenciais no uso, desenvolvimento e gestão de tecnologias de automação e Inteligência Artificial. O programa visa atender às diversas necessidades da comunidade acadêmica da UFFS, desde o conhecimento regulatório básico até a formação de especialistas e o uso avançado em pesquisa.",
       "isActive": false,
       "currentPhase": "Aguardando início",
