@@ -343,8 +343,8 @@ const projectsData = {
     },
     {
       "id": "P3",
-      "title": "Capacitação de servidores e docentes no uso de IA e RPA",
-      "description": "Programas de treinamento e workshops para desenvolver competências no uso e gestão de tecnologias de automação e IA.",
+      "title": "Capacitação Estratégica de Servidores e Docentes no Uso de Inteligência Artificial e RPA na UFFS",
+      "description": "Desenvolvimento e implementação de um programa de capacitação multifacetado, composto por trilhas de aprendizagem modulares, com o objetivo de desenvolver competências essenciais no uso, desenvolvimento e gestão de tecnologias de automação e Inteligência Artificial. O programa visa atender às diversas necessidades da comunidade acadêmica da UFFS, desde o conhecimento regulatório básico até a formação de especialistas e o uso avançado em pesquisa.",
       "isActive": false,
       "currentPhase": "Aguardando início",
       "dependencies": [
@@ -354,55 +354,160 @@ const projectsData = {
       "dependentProjects": [],
       "status": "planning",
       "projectManager": "Jasiel",
-      "teamProfile": "Equipe com competências em: pedagogia e design instrucional para desenvolvimento de conteúdo educacional; especialistas em IA e RPA para conteúdo técnico; facilitadores e instrutores para execução de workshops; especialistas em avaliação e certificação; coordenadores de capacitação.",
+      "teamProfile": "A equipe multidisciplinar será composta por: Coordenador de Capacitação responsável pelo planejamento geral e articulação com a PROGESP; Designer Instrucional especialista em pedagogia para desenhar as trilhas e os materiais didáticos; Especialistas de Conteúdo (Internos e Externos) incluindo especialistas em Legislação e Segurança da Informação, IA e Desenvolvimento, Engenharia de Prompt, RPA e Ciência de Dados, e IA na Pesquisa Acadêmica; Facilitadores/Instrutores para ministrar os cursos e workshops; e Especialista em Avaliação responsável pela criação dos métodos de avaliação e certificação.",
       "projectTeam": [
+        "Coordenador de Capacitação",
         "Designer Instrucional",
-        "Especialista em IA/RPA",
-        "Facilitador/Instrutor",
-        "Especialista em Avaliação",
-        "Coordenador de Capacitação"
+        "Especialista em Legislação e Segurança da Informação",
+        "Especialista em IA e Desenvolvimento",
+        "Especialista em Engenharia de Prompt e Ferramentas de IA",
+        "Especialista em RPA e Ciência de Dados",
+        "Especialista em IA na Pesquisa Acadêmica",
+        "Facilitadores/Instrutores",
+        "Especialista em Avaliação"
       ],
       "priority": "medium",
       "icon": "P3",
       "details": {
-        "objective": "Desenvolver competências em servidores e docentes para uso efetivo e gestão de tecnologias de automação e IA.",
+        "objective": "Capacitar servidores e docentes para o uso ético, seguro e eficiente de tecnologias de IA e RPA, alinhado às diretrizes institucionais, promovendo a inovação, a otimização de processos e o avanço na produção acadêmica.",
         "workPackages": [
-          "Mapeamento de competências atuais",
-          "Desenvolvimento de conteúdo educacional",
-          "Execução de workshops e treinamentos",
-          "Avaliação e certificação"
+          {
+            "name": "a) Trilha Regulatória",
+            "target": "Todos os servidores da UFFS (docentes e técnico-administrativos)",
+            "description": "Curso obrigatório e monitorado sobre a LGPD, a Política de Segurança da Informação (PSI) e o Regulamento do Uso da IA na UFFS. Capacitação fundamental para garantir conformidade legal e institucional.",
+            "deliverable": "Certificado validado pela PROGESP para progressão por capacitação ou compensação de recessos",
+            "responsible": "Especialista em Legislação e Segurança da Informação (interno) com apoio da equipe jurídica e de TI da UFFS",
+            "materialDevelopment": "Equipe interna especializada em legislação, com revisão jurídica e validação pela PROGESP",
+            "trainingExecution": "Facilitadores internos capacitados em legislação de dados e segurança da informação"
+          },
+          {
+            "name": "b) Trilha de Formação de Especialistas em IA",
+            "target": "Equipe técnica da SETI, membros do GT de IA e servidores designados para projetos de desenvolvimento de IA",
+            "description": "Formação aprofundada em conceitos avançados de desenvolvimento de IA, machine learning, deep learning e ferramentas de implementação. Foco em capacitar especialistas para liderar projetos de IA na instituição.",
+            "deliverable": "Certificados de cursos especializados (internos ou externos) validados pela PROGESP",
+            "responsible": "Especialista em IA e Desenvolvimento (interno) em parceria com instituições especializadas ou cursos externos contratados",
+            "materialDevelopment": "Curadoria de cursos externos especializados e desenvolvimento de conteúdo complementar pela equipe técnica interna",
+            "trainingExecution": "Instrutores externos especializados complementados por especialistas internos da SETI e GT de IA"
+          },
+          {
+            "name": "c) Trilha de Formação para Usuários de IA",
+            "target": "Todos os servidores da UFFS (docentes e técnico-administrativos) interessados em otimizar suas atividades com IA",
+            "description": "Capacitação prática em engenharia de prompt, uso eficiente de ferramentas de IA autorizadas pela UFFS e aplicação ética da IA em tarefas setoriais. Foco na produtividade e qualidade do trabalho.",
+            "deliverable": "Certificado validado pela PROGESP para progressão por capacitação ou compensação de recessos",
+            "responsible": "Especialista em Engenharia de Prompt e Ferramentas de IA com apoio de facilitadores internos",
+            "materialDevelopment": "Equipe interna de especialistas em IA com foco em aplicações práticas e casos de uso institucionais",
+            "trainingExecution": "Facilitadores internos treinados em engenharia de prompt e uso de ferramentas de IA, com workshops práticos"
+          },
+          {
+            "name": "d) Trilha para Desenvolvedores de RPA e Ciência de Dados",
+            "target": "Servidores interessados em implementações locais de automação, analistas de sistemas e profissionais de TI dos setores",
+            "description": "Treinamento especializado para automatização de planilhas, desenvolvimento de bots para tarefas repetitivas e análise de dados. Soluções autorizadas pelo Comitê de Governança Digital (CGD) com foco em implementação local.",
+            "deliverable": "Certificado validado pela PROGESP para progressão por capacitação ou compensação de recessos",
+            "responsible": "Especialista em RPA e Ciência de Dados em parceria com especialistas da SETI e membros do GT de IA",
+            "materialDevelopment": "Equipe técnica da SETI e GT de IA com desenvolvimento de casos práticos e laboratórios hands-on",
+            "trainingExecution": "Especialistas da SETI e GT de IA com experiência prática em automação e análise de dados"
+          },
+          {
+            "name": "e) Trilha de Treinamento em Ferramentas Específicas",
+            "target": "Usuários finais das soluções de IA e RPA desenvolvidas e implantadas pela UFFS em seus respectivos setores",
+            "description": "Treinamento focado no uso prático e operacional das ferramentas e soluções específicas desenvolvidas e disponibilizadas pela UFFS. Capacitação just-in-time para maximizar a adoção e eficiência das soluções implantadas.",
+            "deliverable": "Certificado validado pela PROGESP para progressão por capacitação ou compensação de recessos",
+            "responsible": "Equipes técnicas responsáveis por cada solução específica (SETI, GT de IA, equipes de desenvolvimento)",
+            "materialDevelopment": "Equipes desenvolvedoras de cada solução com criação de manuais, tutoriais e materiais de treinamento específicos",
+            "trainingExecution": "Especialistas técnicos de cada equipe desenvolvedora com conhecimento profundo das ferramentas específicas"
+          },
+          {
+            "name": "f) Trilha de IA Generativa na Produção Acadêmica",
+            "target": "Docentes, pesquisadores, estudantes de pós-graduação e profissionais envolvidos em pesquisa e produção acadêmica",
+            "description": "Workshop especializado sobre o uso ético e eficiente de ferramentas de IA generativa para pesquisa, redação acadêmica, análise de dados de pesquisa e produção de trabalhos científicos, em conformidade com as normativas da UFFS e padrões éticos da pesquisa.",
+            "deliverable": "Certificado de participação em atividade de extensão ou capacitação acadêmica",
+            "responsible": "Especialista em IA na Pesquisa Acadêmica em parceria com a Pró-Reitoria de Pesquisa e Pós-Graduação",
+            "materialDevelopment": "Especialistas em pesquisa acadêmica e IA com desenvolvimento de casos de uso específicos para diferentes áreas do conhecimento",
+            "trainingExecution": "Pesquisadores experientes em IA aplicada à pesquisa, com apoio de especialistas em metodologia científica e ética em pesquisa"
+          }
         ],
         "sprints": [
           {
-            "name": "Fase 0 - Preparação para projeto",
-            "description": "Preparação inicial e planejamento do projeto"
+            "name": "Fase 0 - Preparação e Planejamento (Sprint 0)",
+            "description": "Definição detalhada do escopo de cada trilha. Articulação com a PROGESP para alinhamento dos requisitos de certificação. Identificação e alocação dos especialistas e instrutores para cada trilha."
           },
           {
-            "name": "Fase 1 - Diagnóstico",
-            "description": "Mapeamento das competências atuais e necessidades de capacitação"
+            "name": "Fase 1 - Diagnóstico e Mapeamento (Sprint 1)",
+            "description": "Mapeamento das competências atuais e das necessidades de capacitação prioritárias. Levantamento das ferramentas de IA e RPA já em uso ou em planejamento na UFFS."
           },
           {
-            "name": "Fase 2 - Desenvolvimento",
-            "description": "Criação de materiais e metodologias de ensino"
+            "name": "Fase 2 - Desenvolvimento do Conteúdo (Sprint 2)",
+            "description": "Criação dos materiais didáticos, planos de aula e sistemas de avaliação para cada trilha. Configuração das plataformas de ensino (Moodle, etc.)."
           },
           {
-            "name": "Fase 3 - Execução",
-            "description": "Realização dos treinamentos e workshops"
+            "name": "Fase 3 - Execução e Acompanhamento (Sprints 3 em diante)",
+            "description": "Lançamento e realização dos cursos e workshops de cada trilha. Monitoramento do progresso dos participantes e coleta de feedback."
+          },
+          {
+            "name": "Fase 4 - Avaliação e Certificação (Sprint Final)",
+            "description": "Aplicação das avaliações finais. Processamento e envio dos dados à PROGESP para emissão dos certificados. Análise dos indicadores de sucesso e planejamento de novos ciclos de capacitação."
           }
         ],
-        "teamProfile": "Equipe pedagógica especializada em: design instrucional e metodologias de ensino; especialistas em IA e RPA para conteúdo técnico; coordenadores de capacitação; especialistas em educação a distância; avaliadores de aprendizagem.",
-        "projectTeam": [
-          "Coordenador de Capacitação",
-          "Designer Instrucional",
-          "Especialista em IA",
-          "Especialista em RPA",
-          "Coordenador EaD"
-        ],
         "successIndicators": [
-          "Número de servidores capacitados",
-          "Taxa de aprovação nos cursos",
-          "Aplicação prática dos conhecimentos"
-        ]
+          "Número de servidores capacitados por trilha",
+          "Taxa de aprovação e certificação nos cursos validados pela PROGESP",
+          "Nível de satisfação dos participantes (medido por pesquisas de feedback)",
+          "Aplicação prática dos conhecimentos: Número de projetos de RPA/IA iniciados por servidores após a Trilha (d) ou melhorias de processo reportadas pelos participantes da Trilha (c)"
+        ],
+        "projectScope": {
+          "inScope": [
+            {
+              "title": "Planejamento e Estruturação das Trilhas de Capacitação",
+              "description": "Desenvolver o plano pedagógico e o conteúdo programático para as seis trilhas de formação definidas (Regulatória, Especialistas em IA, Usuários de IA, Desenvolvedores de RPA, Treinamento em Ferramentas, IA na Produção Acadêmica)."
+            },
+            {
+              "title": "Articulação para Viabilização de Recursos (P6)",
+              "description": "Garantir, em articulação com o projeto P6 (Gestão de Recursos e Orçamento), a alocação dos recursos financeiros e de infraestrutura necessários para viabilizar a execução de cada uma das trilhas de treinamento. Isso inclui orçamento para contratação de cursos externos, aquisição de materiais, licenças temporárias para softwares de treinamento, e outros custos associados."
+            },
+            {
+              "title": "Desenvolvimento e Curadoria de Conteúdo",
+              "description": "Criar materiais didáticos (apresentações, vídeos, textos, tutoriais) para os cursos ministrados internamente. Realizar a curadoria e a contratação de cursos externos, utilizando os recursos obtidos via P6."
+            },
+            {
+              "title": "Execução e Logística dos Treinamentos",
+              "description": "Organizar e ministrar os workshops, cursos e treinamentos, seja em formato online, presencial ou híbrido. Gerenciar a inscrição e a comunicação com os participantes."
+            },
+            {
+              "title": "Gestão da Certificação junto à PROGESP",
+              "description": "Realizar todos os trâmites necessários para que os cursos destinados aos servidores sejam aprovados pela PROGESP. Garantir que os certificados emitidos sejam válidos para progressão por capacitação e compensação de horas, conforme as normativas da UFFS."
+            },
+            {
+              "title": "Avaliação e Acompanhamento",
+              "description": "Criar e aplicar métodos para avaliar o aprendizado dos participantes. Coletar feedback sobre os cursos para promover a melhoria contínua. Monitorar os indicadores de sucesso definidos (ex: número de capacitados, taxa de aprovação). Foco no Público da UFFS: O projeto é exclusivamente voltado para capacitar o corpo funcional da UFFS (servidores técnico-administrativos e docentes) e, em trilhas específicas, discentes."
+            }
+          ],
+          "outOfScope": [
+            {
+              "title": "Desenvolvimento de Novas Ferramentas de IA e RPA",
+              "description": "Este projeto foca em capacitar pessoas, não em construir as ferramentas. O desenvolvimento de novas soluções de software é responsabilidade de outros projetos ou equipes (como a SETI ou o GT de IA)."
+            },
+            {
+              "title": "Aquisição e Licenciamento de Softwares",
+              "description": "O projeto não é responsável pelo orçamento, compra ou licenciamento de ferramentas de IA ou RPA para uso institucional. Ele apenas treinará os usuários nas ferramentas que forem disponibilizadas e autorizadas pela UFFS."
+            },
+            {
+              "title": "Definição das Políticas e Regulamentos",
+              "description": "O projeto irá ministrar treinamento sobre as políticas existentes (LGPD, PSI, Regulamento de IA), mas não é responsável por criar, redigir ou aprovar essas normativas. Essa é uma dependência (P1)."
+            },
+            {
+              "title": "Suporte Técnico Contínuo das Ferramentas",
+              "description": "A equipe do projeto de capacitação não prestará suporte técnico (help desk) para os usuários das ferramentas de IA e RPA no dia a dia. Essa responsabilidade pertence às equipes de TI ou às equipes responsáveis por cada solução específica."
+            },
+            {
+              "title": "Implementação de Projetos de IA/RPA nos Setores",
+              "description": "O projeto capacita os servidores para que eles possam desenvolver e implementar soluções, mas não é responsável por executar ou gerenciar esses projetos de implementação nos setores."
+            },
+            {
+              "title": "Gestão da Carreira ou Progressão dos Servidores",
+              "description": "O projeto fornece os certificados validados, mas a responsabilidade de solicitar a progressão funcional ou a averbação de horas é inteiramente do servidor, seguindo os procedimentos da PROGESP."
+            }
+          ]
+        }
       },
       "cluster": "Cluster 1 - Institucionalização",
     },

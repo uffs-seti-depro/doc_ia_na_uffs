@@ -270,7 +270,12 @@ class ProjectManager {
                                 return `
                                     <div class="work-package-item">
                                         <h5>${wp.name}</h5>
-                                        ${wp.description ? `<p><strong>Descrição:</strong> ${wp.description}</p>` : ''}
+                                        ${wp.target ? `<p><strong>🎯 Público-alvo:</strong> ${wp.target}</p>` : ''}
+                                        ${wp.description ? `<p><strong>📝 Descrição:</strong> ${wp.description}</p>` : ''}
+                                        ${wp.deliverable ? `<p><strong>📋 Entregável:</strong> ${wp.deliverable}</p>` : ''}
+                                        ${wp.responsible ? `<p><strong>👥 Responsável:</strong> ${wp.responsible}</p>` : ''}
+                                        ${wp.materialDevelopment ? `<p><strong>📚 Desenvolvimento de Material:</strong> ${wp.materialDevelopment}</p>` : ''}
+                                        ${wp.trainingExecution ? `<p><strong>🎓 Execução do Treinamento:</strong> ${wp.trainingExecution}</p>` : ''}
                                         ${wp.deliverables && wp.deliverables.length > 0 ? `
                                             <div class="deliverables">
                                                 <strong>Entregas:</strong>
@@ -327,6 +332,36 @@ class ProjectManager {
                             ${project.details?.successIndicators ? project.details.successIndicators.map(indicator => `<li>${indicator}</li>`).join('') : '<li>Indicadores de sucesso a serem definidos</li>'}
                         </ul>
                     </div>
+                    
+                    ${project.details?.projectScope ? `
+                    <div class="modal-section">
+                        <h4>🎯 Escopo do Projeto</h4>
+                        
+                        <div class="scope-section">
+                            <h5>✅ O que está DENTRO do Escopo:</h5>
+                            <div class="scope-items">
+                                ${project.details.projectScope.inScope.map(item => `
+                                    <div class="scope-item in-scope">
+                                        <h6>${item.title}</h6>
+                                        <p>${item.description}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="scope-section">
+                            <h5>❌ O que está FORA do Escopo (Não Escopo):</h5>
+                            <div class="scope-items">
+                                ${project.details.projectScope.outOfScope.map(item => `
+                                    <div class="scope-item out-of-scope">
+                                        <h6>${item.title}</h6>
+                                        <p>${item.description}</p>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
                     
                     ${project.details?.specificObjectives ? `
                     <div class="modal-section">

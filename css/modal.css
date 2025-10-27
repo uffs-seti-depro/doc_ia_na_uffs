@@ -350,3 +350,62 @@
     color: #2e7d32;
     font-weight: 500;
 }
+
+/* Project Scope Styles */
+.scope-section {
+    margin-bottom: 2rem;
+}
+
+.scope-section h5 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scope-items {
+    display: grid;
+    gap: 1rem;
+}
+
+.scope-item {
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+    background: #f8f9fa;
+}
+
+.scope-item.in-scope {
+    border-left-color: #28a745;
+    background: #f8fff9;
+}
+
+.scope-item.out-of-scope {
+    border-left-color: #dc3545;
+    background: #fff8f8;
+}
+
+.scope-item h6 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.scope-item.in-scope h6 {
+    color: #1e7e34;
+}
+
+.scope-item.out-of-scope h6 {
+    color: #bd2130;
+}
+
+.scope-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
